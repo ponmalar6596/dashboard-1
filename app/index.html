@@ -105,13 +105,70 @@
                 </div>
             </div>
           </div> 
+          <div class="charts">
+            <div class="row">
+              <div class="col-6">
+                <div id="main" style="width:600px; height:400px;"></div>
+              </div>
+              <div class="col-6">
+              <div id="bar" style="width:600px; height:400px;"></div>
+            </div>
+          </div>
+      </div>
+    </div>
+  
         </div>
         <!-- /#page-content-wrapper -->
     
       </div>
       <script src="../node_modules/jquery/dist/jquery.js"></script>
       <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="../node_modules/popper.js/dist/popper.js"></script>
-      
+      <script src="../node_modules/echarts/dist/echarts.js"></script>
+      <!-- <script src="../node_modules/popper.js/dist/popper.js"></script> -->
+      <script type="text/javascript">
+        // based on prepared DOM, initialize echarts instance
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // specify chart configuration item and data
+        var option = {
+          xAxis: {
+              type: 'category',
+              data: ['jasodf', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+          },
+          yAxis: {
+              type: 'value'
+          },
+          series: [{
+              data: [820, 932, 901, 934, 1290, 1330, 1320],
+              type: 'line'
+          }]
+      };
+
+        // use configuration item and data specified to show chart
+        myChart.setOption(option);
+        var myChart = echarts.init(document.getElementById('bar'));
+
+        // specify chart configuration item and data
+        var option = {
+    xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [120, 200, 150, 80, 70, 110, 130],
+        type: 'bar',
+        showBackground: true,
+        backgroundStyle: {
+            color: 'rgba(220, 220, 220, 0.8)'
+        }
+    }]
+};
+
+        // use configuration item and data specified to show chart
+        myChart.setOption(option);
+    </script>
 </body>
 </html>
