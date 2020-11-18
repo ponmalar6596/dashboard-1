@@ -13,7 +13,7 @@
 
         <!-- Sidebar -->
         <div class="bg-light border-right" id="sidebar-wrapper">
-          <div class="sidebar-heading">Start Bootstrap </div>
+          <div class="sidebar-heading">About</div>
           <div class="list-group list-group-flush">
             <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Layouts</a>
@@ -63,7 +63,7 @@
 
           <div class="container-fluid">
             <div class="page-title">
-                <h1>Dashboard</h1>
+                <h1>Corona Dashboard</h1>
             </div>
             <div class="page-content">
                 <div class="statistics">
@@ -71,33 +71,33 @@
                         <div class="col-3">
                             <div class="card card-statistics varient-1">
                                 <div class="card-body">
-                                  <h5 class="card-title">Primary Card</h5>
+                                  <h5 class="card-title">Confirmed Cases</h5>
                                   <a class="small text-white stretched-link" href="#"></a>
-                                  <p class="card-text">View Details</p>
+                                  <p class="card-text">10,345</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="card card-statistics varient-2">
                                 <div class="card-body">
-                                  <h5 class="card-title">Warning Card</h5>
-                                  <p class="card-text">View Details</p>
+                                  <h5 class="card-title">Infectious People</h5>
+                                  <p class="card-text">1,00,435</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="card card-statistics varient-3">
                                 <div class="card-body">
-                                  <h5 class="card-title">Success Card</h5>
-                                  <p class="card-text">View Details</p>
+                                  <h5 class="card-title">Recover People</h5>
+                                  <p class="card-text">1,345</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="card card-statistics varient-4">
                                 <div class="card-body">
-                                  <h5 class="card-title">Danger Card</h5>
-                                  <p class="card-text">View Details</p>
+                                  <h5 class="card-title">Hospital Admissions</h5>
+                                  <p class="card-text">8,345</p>
                                 </div>
                             </div>
                         </div>
@@ -133,13 +133,13 @@
         var option = {
           xAxis: {
               type: 'category',
-              data: ['jasodf', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+              data: ['Jan','Feb','March', 'April', 'May', 'June', 'July', 'Aug', 'Sep','Oct','Nov','Dec']
           },
           yAxis: {
               type: 'value'
           },
           series: [{
-              data: [820, 932, 901, 934, 1290, 1330, 1320],
+              data: [50, 140, 234, 425, 558, 617, 820, 932, 901, 934, 1290, 1330],
               type: 'line'
           }]
       };
@@ -152,7 +152,7 @@
         var option = {
     xAxis: {
         type: 'category',
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        data: ['India', 'China', 'Pakisthan', 'America', 'Singapur', 'Japan', 'Koria']
     },
     yAxis: {
         type: 'value'
@@ -166,7 +166,6 @@
         }
     }]
 };
-
         // use configuration item and data specified to show chart
         myChart.setOption(option);
     </script>

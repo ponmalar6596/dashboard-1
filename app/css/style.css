@@ -54,7 +54,7 @@ body{
        border-radius: 6px;
    }
    .card-statistics.varient-1{
-       background-color: #007bff;
+    background-color: #dc3545 ;
    }
    .card-statistics.varient-2{
     background-color: #ffc107 ;
@@ -63,7 +63,7 @@ body{
     background-color: #28a745 ;
    }
    .card-statistics.varient-4{
-    background-color: #dc3545 ;
+    background-color: #007bff;
    }
    .card-statistics .card-body{}
    .card-statistics .card-body .card-title{
