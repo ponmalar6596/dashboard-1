@@ -1,3 +1,6 @@
+.back{
+  background-color: lavender;
+}
 body {
   background-color: #f8f9fc;
 }
@@ -48,24 +51,23 @@ body {
 }
 
 .card-statistics {
-  /* height: 80px; */
-  border: none;
+  border: solid 1px;
   border-radius: 6px;
 }
 .card-statistics.card-1 {
-  border-left: solid blue 3px;
+  border-left: solid blue 4px;
   background-color: white;
 }
 .card-statistics.card-2 {
-  border-left: solid yellow 3px;
+  border-left: solid yellow 4px;
   background-color: white;
 }
 .card-statistics.card-3 {
-  border-left: solid red 3px;
+  border-left: solid red 4px;
   background-color: white;
 }
 .card-statistics.card-4 {
-  border-left: solid green 3px;
+  border-left: solid green 4px;
   background-color: white;
 }
 .card-statistics .card-body .card-title {
@@ -91,6 +93,10 @@ body {
   font-weight: 350px;
   color: black;
 }
-h1{
-  text-underline-position: below;
+.charts{
+  background-color: rgb(230, 227, 227);
+  margin: 13px 0 0 13px;
+}
+.Tables{
+  margin-top:10px ;
 }

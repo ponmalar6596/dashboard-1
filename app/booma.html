@@ -11,8 +11,8 @@
     <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <div class="bg-light border-right" id="sidebar-wrapper">
-          <div class="sidebar-heading">Start Bootstrap </div>
+        <div class="back border-right" id="sidebar-wrapper">
+          <div class="back sidebar-heading">Start Bootstrap </div>
           <div class="list-group list-group-flush">
             <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Layouts</a>
@@ -45,7 +45,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Link</a>
                 </li> -->
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown
                   </a>
@@ -55,7 +55,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Loggout</a>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </div>
           </nav>
@@ -104,20 +104,71 @@
                 </div>
             </div>
           </div> 
-          <div class="container-fluid">
           <div class="charts">
               <h1>Charts</h1>
             <div class="row">
               <div class="col-6">
                 <div id="main" style="width:600px; height:400px;"></div>
+                
               </div>
               <div class="col-6">
               <div id="bar" style="width:600px; height:400px;"></div>
             </div>
           </div>
       </div>
-    </div>
-    </div>
+      <div class="Tables">
+        <table class="table table-hover">
+          <thead class="thead-dark"><tr>
+          <th scope="col">Month</th>
+          <th scope="col">Total cases</th>
+          <th scope="col">Active</th>
+          <th scope="col">Discharged</th>
+          <th scope="col">Deaths</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Jan</td>
+            <td> 3000</td>
+            <td> 295</td>
+            <td> 2500</td>
+            <td> 205</td>
+          </tr> <tr>
+            <td> Feb</td>
+            <td> 30560</td>
+            <td> 4000</td>
+            <td> 25500</td>
+            <td> 1060</td>
+          </tr> <tr>
+            <td> Mar</td>
+            <td> 70465</td>
+            <td> 45869</td>
+            <td> 22584</td>
+            <td> 2012</td>
+          </tr> <tr>
+            <td> Apr</td>
+            <td> 90795</td>
+            <td> 40085</td>
+            <td> 46548</td>
+            <td> 4162</td>
+          </tr> <tr>
+            <td> May</td>
+            <td> 120346</td>
+            <td> 75896</td>
+            <td> 42365</td>
+            <td> 2085</td>
+          </tr> <tr>
+            <td> June</td>
+            <td> 170456</td>
+            <td> 85692</td>
+            <td> 79586</td>
+            <td> 5178</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+      </div>
+        </div>
   
         </div>
         <!-- /#page-content-wrapper -->
@@ -132,19 +183,45 @@
         var myChart = echarts.init(document.getElementById('main'));
 
         // specify chart configuration item and data
-        var option = {
-          xAxis: {
-              type: 'category',
-              data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June']
-          },
-          yAxis: {
-              type: 'value'
-          },
-          series: [{
-              data: [20,50,70,90,120,170],
-              type: 'pie'
-          }]
-      };
+                var option = {
+    title: {
+        text: 'PIE CHART',
+        subtext:'Corona status',
+        left: 'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May','June']
+    },
+    series: [
+        {
+            name: 'corona',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '60%'],
+            data: [
+            {value: 3000, name: 'Jan'},
+                {value: 30560, name: 'Feb'},
+                {value: 70465, name: 'Mar'},
+                {value: 90795, name: 'Apr'},
+                {value: 120346, name: 'May'},
+                {value: 170456, name:'June'}
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
 
         // use configuration item and data specified to show chart
         myChart.setOption(option);
@@ -152,6 +229,11 @@
 
         // specify chart configuration item and data
         var option = {
+          title: {
+        text: 'BAR CHART',
+        subtext:'Corona status',
+        left: 'center'
+    },
     xAxis: {
         type: 'category',
         data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June']
@@ -160,9 +242,21 @@
         type: 'value'
 
     },
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
     series: [{
-        data: [20,50,70,90,120,170],
-        type: 'scatter',
+      name:'corona',
+          data: [
+                {value: 3000, name: 'Jan'},
+                {value: 30560, name: 'Feb'},
+                {value: 70465, name: 'Mar'},
+                {value: 90795, name: 'Apr'},
+                {value: 120346, name: 'May'},
+                {value: 170456, name:'June'}
+            ],
+                    type: 'scatter',
         showBackground: true,
         backgroundStyle: {
             color: 'rgba(220, 220, 220, 0.8)'
@@ -172,6 +266,7 @@
         // use configuration item and data specified to show chart
         myChart.setOption(option);
             </script>
+           
       
 </body>
 </html>
