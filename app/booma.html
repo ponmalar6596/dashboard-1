@@ -118,6 +118,7 @@
       </div>
       <div class="Tables">
         <table class="table table-hover">
+          <h2>COVID-19 STS</h2>
           <thead class="thead-dark"><tr>
           <th scope="col">Month</th>
           <th scope="col">Total cases</th>
@@ -167,6 +168,55 @@
         </tbody>
         </table>
       </div>
+      <form class="form">
+        <h1 class=hd>Form</h1>
+        <div class="content">
+          <div>
+    <label for="fname">NAME</label>
+    <input class="input1 b"type="text" id="fname"name="fname" placeholder="NAME"/>
+  </div><br><div>
+      <label for="email_id">Email</label>
+      <input type="email" id="email_id"name="email_id" placeholder="Email"/>
+                </div><br><div>
+      <label for="mob_no">Mobile</label>
+      <input type="number" id="mob_no"name="mob_no" placeholder="Contact no"/>
+    </div><br><div>
+      <label for="pass">Password</label>
+      <input type="password" id="pass"name="pass" placeholder="Password"/>
+    </div><br><div>
+      <label for="con_pass">Confirm Password</label>
+      <input type="password" id="con_pass"name="con_pass" placeholder="Password"/>
+    </div><br><div>
+      <label>Gender</label>
+      <input type="radio" id="g_male"name="g_male"/>
+      <label for="g_male">Male</label>
+      <input type="radio" id="g_female"name="g_female"/>
+      <label for="g_female">Female</label>
+    </div><br><div>
+      <label>Languages Known</label>
+      <input type="checkbox" id="l_tamil"name="l_tamil"/>
+      <label for="l_tamil">Tamil</label>
+      <input type="checkbox" id="l_english"name="l_english">
+      <label for="l_english">English</label>
+    </div><br><div>
+      <label>Country</label>
+      <select name="Select your country" id="country">
+          <option>Select your country</option> 
+          <option>India</option>
+          <option>USA</option>
+          <option>UK</option>
+      </select>
+    </div><br><div>
+      <label for="bio">Biodata</label>
+      <textarea type="text"id="bio"name="text"></textarea>
+    </div><br>
+    <div>
+        <label>Submit</label>
+        <button>Create </button>
+    </div>
+  </div>
+</form>
+
       </div>
         </div>
   
@@ -201,7 +251,7 @@
     series: [
         {
             name: 'corona',
-            type: 'pie',
+             type: 'pie',
             radius: '55%',
             center: ['50%', '60%'],
             data: [
@@ -225,7 +275,7 @@
 
         // use configuration item and data specified to show chart
         myChart.setOption(option);
-        var myChart = echarts.init(document.getElementById('bar'));
+         var myChart = echarts.init(document.getElementById('bar'));
 
         // specify chart configuration item and data
         var option = {
@@ -248,7 +298,7 @@
     },
     series: [{
       name:'corona',
-          data: [
+                data: [
                 {value: 3000, name: 'Jan'},
                 {value: 30560, name: 'Feb'},
                 {value: 70465, name: 'Mar'},
@@ -265,6 +315,7 @@
 };
         // use configuration item and data specified to show chart
         myChart.setOption(option);
+        
             </script>
            
       

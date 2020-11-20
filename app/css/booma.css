@@ -100,3 +100,12 @@ body {
 .Tables{
   margin-top:10px ;
 }
+.form {
+   line-height: 20px;
+background-color: rgb(219, 235, 234);
+   /* margin: 50px;
+  padding: 40px; */
+}
+.content{
+  padding-left: 150px;
+}
