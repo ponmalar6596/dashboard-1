@@ -5,41 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/booma.css">
+    <link rel="stylesheet" href="../vendor/icofont/icofont.min.css">
     <title>Document</title>
 </head>
 <body>
     <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <div class="back border-right" id="sidebar-wrapper">
-          <div class="back sidebar-heading">Start Bootstrap </div>
-          <div class="list-group list-group-flush">
-            <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Layouts</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Pages</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Charts</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Tables</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Forms</a>
+         <div class="back bg-dark" id="sidebar-wrapper">
+            <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button> -->
+       <button class="bt bg-dark" onclick="myFunctionnn()"id="bn">
+          <i class="icofont-navigation-menu"></i>
+        </button>
+          <div class="list-group list-group-flush" id="ds">
+            <a href="#" class="list-group-item list-group-item-action bg-dark">Dashboard</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark">Layouts</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark">Pages</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark">Charts</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark" onclick="myFunction()">Tables</a>
+            
+            <!-- <div id="myDIV">
+              This is my DIV element.
+            </div> -->
+            <a href="#" class="list-group-item list-group-item-action bg-dark"onclick="myFunctionn()">Forms</a>
           </div>
-        </div>
+        </div> 
         <!-- /#sidebar-wrapper -->
     
         <!-- Page Content -->
         <div id="page-content-wrapper">
-    
-          <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-            <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-    
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <nav class="navbar navbar-expand-lg  bg-dark border-bottom">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
     
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
                 
+
+                      <button class="btn btn-primary" type="button"><i class="icofont-search"></i> </button>
+                  </div>
+              </div>
                 <!-- <i class="icofont-search icofont-1x"></i> -->
-                <!-- <li class="nav-item active">
+               <!-- <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -59,72 +71,70 @@
               </ul>
             </div>
           </nav>
-
+          
           <div class="container-fluid">
             <div class="page-title">
                 <h1>Dashboard</h1>
             </div>
-            <div class="page-content">
-                <div class="statistics">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="card card-statistics card-1">
-                                <div class="card-body">
-                                  <h5 class="card-title">Total cases</h5>
-                                  <a class="small text-white stretched-link" href="#"></a>
-                                  <p class="card-text">89,58,483</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card card-statistics card-2">
-                                <div class="card-body">
-                                  <h5 class="card-title">Active</h5>
-                                  <p class="card-text">4,43,567</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card card-statistics card-3">
-                                <div class="card-body">
-                                  <h5 class="card-title">Discharged</h5>
-                                  <p class="card-text">83,83,602</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card card-statistics card-4">
-                                <div class="card-body">
-                                  <h5 class="card-title">Deaths</h5>
-                                  <p class="card-text">1,31,578</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div> 
-          <div class="charts">
+            <div class="row">
+              <div class="col-xl-3 col-md-6">
+                  <div class="card bg-primary text-white mb-4">
+                      <div class="card-body">Total Cases</div>
+                      <div class="card-footer d-flex align-items-center justify-content-between">
+                          <a class="small text-white stretched-link" href="#">View Details</a>
+                          <div class="small text-white"><i class="icofont-square-right"></i></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                  <div class="card bg-warning text-white mb-4">
+                      <div class="card-body">Active</div>
+                      <div class="card-footer d-flex align-items-center justify-content-between">
+                          <a class="small text-white stretched-link" href="#">View Details</a>
+                          <div class="small text-white"><i class="icofont-square-right"></i></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                  <div class="card bg-success text-white mb-4">
+                      <div class="card-body">Discharged</div>
+                      <div class="card-footer d-flex align-items-center justify-content-between">
+                          <a class="small text-white stretched-link" href="#">View Details</a>
+                          <div class="small text-white"><i class="icofont-square-right"></i></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-md-6">
+                  <div class="card bg-danger text-white mb-4">
+                      <div class="card-body">Deaths</div>
+                      <div class="card-footer d-flex align-items-center justify-content-between">
+                          <a class="small text-white stretched-link" href="#">View Details</a>
+                          <div class="small text-white"><i class="icofont-square-right"></i></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+                    <div class="charts">
               <h1>Charts</h1>
             <div class="row">
               <div class="col-6">
-                <div id="main" style="width:600px; height:400px;"></div>
+                <div id="main" style="width:500px; height:400px;"></div>
                 
               </div>
               <div class="col-6">
-              <div id="bar" style="width:600px; height:400px;"></div>
+              <div id="bar" style="width:500px; height:400px;"></div>
             </div>
           </div>
       </div>
-      <div class="Tables">
-        <table class="table table-hover">
+      <div class="Tables" id="tab">
+        <table class="table table-hover table-borderless">
           <h2>COVID-19 STS</h2>
           <thead class="thead-dark"><tr>
-          <th scope="col">Month</th>
-          <th scope="col">Total cases</th>
-          <th scope="col">Active</th>
-          <th scope="col">Discharged</th>
-          <th scope="col">Deaths</th>
+          <th >Month</th>
+          <th >Total cases</th>
+          <th >Active</th>
+          <th >Discharged</th>
+          <th >Deaths</th>
         </tr>
         </thead>
         <tbody>
@@ -168,8 +178,8 @@
         </tbody>
         </table>
       </div>
-      <form class="form">
-        <h1 class=hd>Form</h1>
+      <form class="form" id="frm">
+        <h1 class=hd>Patient Details</h1>
         <div class="content">
           <div>
     <label for="fname">NAME</label>
@@ -216,17 +226,17 @@
     </div>
   </div>
 </form>
-
+</div>
       </div>
         </div>
-  
-        </div>
+          </div>
         <!-- /#page-content-wrapper -->
     
       </div>
       <script src="../node_modules/jquery/dist/jquery.js"></script>
       <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="../node_modules/echarts/dist/echarts.js"></script>
+      <script src="booma.js"></script>
       <!-- <script src="../node_modules/popper.js/dist/popper.js"></script> -->
       <script type="text/javascript">
         // based on prepared DOM, initialize echarts instance
@@ -317,7 +327,6 @@
         myChart.setOption(option);
         
             </script>
-           
       
-</body>
+      </body>
 </html>
