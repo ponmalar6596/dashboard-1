@@ -1,23 +1,42 @@
 .back{
-  background-color: lavender;
+    color: #f8f9fc;
+  font-variant: small-caps;
 }
 body {
   background-color: #f8f9fc;
 }
-
+.list-group{
+  padding-top: 20px;
+}
 #wrapper {
   overflow-x: hidden;
 }
+/* .bi{
+  padding-left: 25px;
+} */
+.bt{
+  margin-left: 100px;
+    }
+   
 
+#menu-toggle{
+  margin-left: 55px;
+  margin-top: 11px;
+}
 #sidebar-wrapper {
-  min-height: 100vh;
+    min-height: 100vh;
   margin-left: -15rem;
   -webkit-transition: margin 0.25s ease-out;
   -moz-transition: margin 0.25s ease-out;
   -o-transition: margin 0.25s ease-out;
   transition: margin 0.25s ease-out;
 }
-
+.list-group-item{
+  padding-left: 65px;
+  font-variant: small-caps;
+  color: #f8f9fc;
+  font-size: 18px;
+  }
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
   font-size: 1.2rem;
