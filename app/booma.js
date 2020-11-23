@@ -1,19 +1,4 @@
-function myFunction() {
-    var x = document.getElementById("tab");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-    function myFunctionn() {
-    var y = document.getElementById("frm");
-    if (y.style.display === "none") {
-      y.style.display = "block";
-    } else {
-      y.style.display = "none";
-    }
-  }
+
   function myFunctionnn() {
     var y = document.getElementById("ds");
     if (y.style.display === "none") {
@@ -22,4 +7,19 @@ function myFunction() {
       y.style.display = "none";
     }
   }
-  
+//   $(document).ready(function(){
+//     $("#apply").click(function(){
+//         var input=$("#fname").val();
+//         var clr=$("#colors").val();
+//         var sizess=$("#sizes").val();
+//         var bgclr=$("#bgcolor").val();
+//         $('#design').append('<p id="result"></p>');
+//         $('#result').text(input);
+//         $('#result').css('font-size',sizess+'px');
+//         $('#result').css('color',clr);
+//         $('#result').css('background-color',bgclr);
+
+//     })
+// });
+
+

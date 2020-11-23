@@ -14,20 +14,23 @@
         <!-- Sidebar -->
          <div class="back bg-dark" id="sidebar-wrapper">
             <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button> -->
+            <h4>COVID-19 STS</h4>
        <button class="bt bg-dark" onclick="myFunctionnn()"id="bn">
           <i class="icofont-navigation-menu"></i>
         </button>
           <div class="list-group list-group-flush" id="ds">
-            <a href="#" class="list-group-item list-group-item-action bg-dark">Dashboard</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark">Layouts</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark">Pages</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark">Charts</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark" onclick="myFunction()">Tables</a>
-            
-            <!-- <div id="myDIV">
-              This is my DIV element.
-            </div> -->
-            <a href="#" class="list-group-item list-group-item-action bg-dark"onclick="myFunctionn()">Forms</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark">
+              <i class="icofont-dashboard icofont-1x side-icon"></i>Dashboard</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark">
+              <i class="icofont-copy icofont-1x side-icon"></i>Layouts</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark">
+              <i class="icofont-book-alt icofont-1x side-icon"></i>Pages</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark">
+              <i class="icofont-chart-pie icofont-1x side-icon"></i>Charts</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark">
+              <i class="icofont-table icofont-1x side-icon"></i>Tables</a>
+           <a href="#" class="list-group-item list-group-item-action bg-dark">
+            <i class="icofont-edit icofont-1x side-icon"></i>Forms</a>
           </div>
         </div> 
         <!-- /#sidebar-wrapper -->
@@ -46,9 +49,10 @@
                   <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                   <div class="input-group-append">
                 
-
                       <button class="btn btn-primary" type="button"><i class="icofont-search"></i> </button>
                   </div>
+                <ul class="navbar-nav ml-auto ml-md-0">
+                                       </ul>
               </div>
                 <!-- <i class="icofont-search icofont-1x"></i> -->
                <!-- <li class="nav-item active">
@@ -114,7 +118,7 @@
                   </div>
               </div>
           </div>
-                    <div class="charts">
+             <div class="charts">
               <h1>Charts</h1>
             <div class="row">
               <div class="col-6">
@@ -127,7 +131,7 @@
           </div>
       </div>
       <div class="Tables" id="tab">
-        <table class="table table-hover table-borderless">
+        <table class="table table-hover table-bordered table-striped">
           <h2>COVID-19 STS</h2>
           <thead class="thead-dark"><tr>
           <th >Month</th>
@@ -290,7 +294,7 @@
         // specify chart configuration item and data
         var option = {
           title: {
-        text: 'BAR CHART',
+                    text: 'BAR CHART',
         subtext:'Corona status',
         left: 'center'
     },

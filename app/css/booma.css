@@ -14,11 +14,7 @@ body {
 /* .bi{
   padding-left: 25px;
 } */
-.bt{
-  margin-left: 100px;
-    }
-   
-
+  
 #menu-toggle{
   margin-left: 55px;
   margin-top: 11px;
@@ -32,7 +28,7 @@ body {
   transition: margin 0.25s ease-out;
 }
 .list-group-item{
-  padding-left: 65px;
+  padding-left: 45px;
   font-variant: small-caps;
   color: #f8f9fc;
   font-size: 18px;
@@ -127,4 +123,13 @@ background-color: rgb(219, 235, 234);
 }
 .content{
   padding-left: 150px;
+}
+.side-icon{
+  padding-right: 15px;
+}
+.tab{
+  display:none;
+}
+.frm{
+  display:none;
 }
