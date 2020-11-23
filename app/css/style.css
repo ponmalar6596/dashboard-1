@@ -52,7 +52,9 @@ body{
    }
  }
  
- 
+ .statistics{
+     margin-bottom: 20px;
+ }
  .card-statistics{
      border: none;
      /* border-left: solid 4px; */

@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    <link  rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./css/style.css" />
+  
     <link rel="stylesheet" href="../vendor/icofont/icofont.min.css" />
-    <title>Document</title>
+  <!-- <link rel="stylesheet" href="./main.js">   -->
+       <title>Document</title>
   </head>
   <body>
     <div class="d-flex" id="wrapper">
@@ -18,7 +17,7 @@
       <div class="bg-light bg-dark sidebar" id="sidebar-wrapper">
         <nav class="navbar navbar-dark bg-dark">
         <div class="sidebar-heading">About</div>
-        <div class="list-group list-group-flush">
+        <div class="list-group list-group-flush"id="clk">
           <a href="#" class="list-group-item list-group-item-action bg-dark"
             >
             <i class="icofont-dashboard icofont-1x side-icon"></i>Dashboard</a
@@ -48,7 +47,7 @@
       <div id="page-content-wrapper" class="entire">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom "
         >
-        <button type="button" class="btn btn-default btn-flat"><i class="fas fa-align-left"></i></button>
+        <button type="button" class="btn btn-default btn-flat"onclick="myfunction()"id="bt"><i class="navbar-toggler-icon"></i></button>
           <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button> -->
 
           <button
@@ -108,7 +107,7 @@
 
         <div class="container-fluid">
           <div class="page-title">
-            <h1>Corona Dashboard</h1>
+            <h1>Dashboard</h1>
           </div>
           <div class="page-content ">
             <div class="statistics">
@@ -150,21 +149,43 @@
             </div>
           </div>
         </div>
-        <div class="charts">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-6">
-              <div class="card-body">
-                <h3 class="card-title">Line Chart</h3>
-              <div id="main" style="width: 600px; height: 400px"></div>
-            </div>
+              <div class="card">                  
+                 <h5 class="card-header"> <i class="icofont-chart-histogram-alt side-icon  icofont-1x"></i> Line Chart</h5>
+                  <div class="card-body">
+                    <div id="main" style="width: 500px; height: 300px"></div>
+                  </div>
+              </div>
             </div>
             <div class="col-6">
-              <div class="card-body">
-                <h3 class="card-title">Bar Chart</h3>   
-              <div id="bar" style="width: 600px; height: 400px"></div>
+              <div class="card">
+                <h5 class="card-header"> <i class="icofont-chart-bar-graph side-icon icofont-1x"></i> Bar Chart</h5>
+                  <div class="card-body">
+                    <div id="bar" style="width: 500px; height: 300px"></div>
+                  </div>
               </div>
             </div>
           </div>
+          <!-- <div class="card card-default">
+            <div class="card-header"><i class="icofont-chart-histogram-alt side-icon"></i<h3>Line Chart</h3>
+             <div class="col-6">
+              <div class="card-body">
+                <h4 class="card-title line">Line Chart</h4> 
+              <div id="main" style="width: 600px; height: 400px"></div>
+            </div>
+            </div>
+            </div>
+            <div class="card-header">
+            <div class="col-6">
+              <div class="card-body">
+                <h4 class="card-title"><i class="icofont-chart-bar-graph side-icon"></i>Bar Chart</h4>   
+              <div id="bar" style="width: 600px; height: 400px"></div>
+              </div>
+            </div>
+            </div>
+          </div> -->
         </div>
         <div class="Tables">
           <table class="table table-striped">
@@ -262,6 +283,7 @@
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/echarts/dist/echarts.js"></script>
+    <script src="main.js"></script>
     <!-- <script src="../node_modules/popper.js/dist/popper.js"></script> -->
     <script type="text/javascript">
       // based on prepared DOM, initialize echarts instance
@@ -269,8 +291,9 @@
 
       // specify chart configuration item and data
       var option = {
+       
     xAxis: {
-        type: 'category',
+              type: 'category',
         boundaryGap: false,
         data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'sep', 'Oct', 'Nov', 'Dec']
     },
@@ -278,7 +301,7 @@
         type: 'value'
     },
     series: [{
-        data: [820,10086,43907,56789, 67988,89080,153328, 199501, 243934, 341290, 541330, 671320,],
+              data: [820,10086,43907,56789, 67988,89080,153328, 199501, 243934, 341290, 541330, 671320,],
         type: 'line',
         areaStyle: {},
         color: 'skyblue'
