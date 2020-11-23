@@ -6,10 +6,25 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="../vendor/icofont/icofont.min.css">
-    <title>Document</title>
+    <title>Dashboard</title>
   </head>
 <body>
- <div class="container-fluid">
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right  bg-dark  " id="sidebar-wrapper">
+     
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+      </div>  
+    </div>
+  
+  <div class="container">
             <div class="page-title">
 
               <h1>Dashboard</h1>
@@ -19,7 +34,7 @@
             <div class="statistics">  
   <div class="row">
   
-    <div class="col-sm-3">
+    <div class="col-sm-3 nm">
       <div class="card ca1">
         <div class="card-body">
           <h5 class="card-title text-white">primary card</h5>
@@ -61,9 +76,11 @@
         <div class="row">
           <div class="col-6">
             <div class="card-header">
-              
-                                        Area Chart Example
-                                    </div>
+              Area Chart Example
+           </div>
+           
+           
+
             <div id="main" style="width:600px; height:400px;"></div>
           </div>
           <div class="col-6">
@@ -77,11 +94,81 @@
 </div>
   </div>
 </div> 
+<div class="tables container">
+  <table class="table table-hover table-bordered">
+    <tr>
+     <thead class="thead-dark">
+    <th scope="col">month</th>
+    <th scope="col">total cases</th>
+    <th scope="col">active</th>
+    <th scope="col">discharged</th>
+    <th scope="col">deaths</th>
+  </tr>
+</thead> 
+  <tr>
+    <td>jan</td>
+    <td>3000</td>
+    <td>295</td>
+    <td>2500</td>
+    <td>205</td>
+  </tr>
+  <tr>
+    <td>jan</td>
+    <td>3000</td>
+    <td>295</td>
+    <td>2500</td>
+    <td>205</td>
+  </tr>
+  <tr>
+    <td>jan</td>
+    <td>3000</td>
+    <td>295</td>
+    <td>2500</td>
+    <td>205</td>
+  </tr>
+  <tr>
+    <td>jan</td>
+    <td>3000</td>
+    <td>295</td>
+    <td>2500</td>
+    <td>205</td>
+  </tr>
+  <tr>
+    <td>jan</td>
+    <td>3000</td>
+    <td>295</td>
+    <td>2500</td>
+    <td>205</td>
+  </tr>
+  </table>
+
+</div>
+</div> 
+</div> 
 <script src="../node_modules/jquery/dist/jquery.js"></script>
       <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../node_modules/echarts/dist/echarts.js"></script>
       <!-- <script src="../node_modules/popper.js/dist/popper.js"></script> -->
       <script type="text/javascript">
+      var myChart = echarts.init(document.getElementById('main'));
+
+// specify chart configuration item and data
+var option = {
+  xAxis: {
+      type: 'category',
+      data: ['jasodf', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+      type: 'value'
+  },
+  series: [{
+      data: [820, 932, 901, 934, 1290, 1330, 1320],
+      type: 'line'
+  }]
+};
+
+// use configuration item and data specified to show chart
+myChart.setOption(option)
        
         
     </script>

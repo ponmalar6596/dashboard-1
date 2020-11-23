@@ -24,3 +24,13 @@
     background-color: #e9ecef;
     
 }
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+.board{
+  width: 250px;
+}
