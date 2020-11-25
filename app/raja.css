@@ -1,0 +1,88 @@
+.head{
+    height: 70px;
+}
+.card1{
+  background-color: blue;  
+}
+.card2{
+    background-color:yellow;  
+  }
+  .card3{
+    background-color: green;  
+  }
+  .card4{
+    background-color:red;  
+  }
+  .Dashboard{
+      padding-top: 20px;
+  }
+  .nm{
+     padding-top: 20px; 
+  }
+  .cha{
+    padding-top: 30px;  
+  }
+ 
+  .list-group-item
+  {
+      color: white;
+     
+  }
+.board{
+   width: 230px;
+ }
+ .head .persion{
+  padding-top:20px ;
+   margin-right: 0px;
+   font-size: 30px;
+   color: white;
+ }
+ .head .menu{
+   font-size: 20px  ;
+   color:white;
+   padding-left:250px;
+  
+  padding-bottom: 20px;
+ }
+ .input-group{
+  padding-top:20px ;
+  margin-right: 0px;
+  padding-left:250px;
+  font-size: 50px;
+   
+ }
+ .icon{
+  padding-right: 15px; 
+ }
+ .wrapper{
+ background-image: url("../app/download\ \(1\).jpg");
+  background-size:cover;
+  height: 8 0vh;
+  position: absolute;
+  top: 10%;
+  margin-left: 500px;
+  padding: 10px 10px 10px 10px;
+ 
+ }
+ .contact-form{
+   max-width: 550px;
+   margin: 0 auto;
+   background-color: black;
+   display: flex;
+ }
+ 
+
+.user-login-5 .login-container>.login-content>.login-form .form-control {
+    margin-bottom: 50px;
+}
+.one {
+    width: 100%;
+    padding: 10px 0;
+    border:red;
+    border-bottom: 1px solid;
+    color:red;
+    font-size: 14px;
+}
+.user-login-5 .form-group.valid {
+    border-bottom: 1px solid #a0a9b4!important
+}

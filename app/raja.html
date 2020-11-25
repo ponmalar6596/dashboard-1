@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/icofont/demo.html">
+    <link rel="stylesheet" href="./raja.css">
+    <link rel="stylesheet" href="../vendor/icofont/icofont.min.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../app/main.js">
+  
+</head>
+<body>
+  <div class="container-fluid bg-dark head">
+     <div class="row"> 
+        <div onclick="myfunction" class="col-4 first">
+           <i class="icofont-navigation-menu menu"></i> 
+          </div>  
+               <div class=" col-4 input-group">
+                  <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                       <button class="btn btn-primary" type="button"><svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg><!-- <i class="fas fa-search"></i> Font Awesome fontawesome.com --></button>
+                        </div> 
+                         </div>  
+                        
+                   
+                 <div class="col-4 ">
+             <i class="fa fa-user-circle-o persion" aria-hidden="true"></i>
+           </div>
+          </div>
+        </div>
+ 
+     
+    <div class="d-flex" id="wrapper">
+       
+
+        <!-- Sidebar -->
+        <div class="bg-dark border-right board" id="sidebar-wrapper">
+         
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action bg-dark">Dashboard</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark"><i class="icofont-layout icon"></i>layouts</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark">pages</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark "> <i class="icofont-chart-bar-graph icon"></i>charts</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark"><i class="icofont-table icon"></i>tables</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark"><i class="fa fa-file-text-o icon" aria-hidden="true"></i>forms</a>
+          </div>
+        </div>
+        <div class="container-fluid">
+            <div class="page-title Dashboard">
+                <h1>Dashboard</h1>
+        <div class="row">
+            <div class="col-sm-3 nm">
+              <div class="card card1">
+                <div class="card-body">
+                  <h5 class="card-title">primary card</h5>
+                     <a href="#" >Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 nm ">
+              <div class="card card2">
+                <div class="card-body">
+                  <h5 class="card-title">warning card</h5>
+                    <a href="#">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 nm ">
+                <div class="card card3">
+                  <div class="card-body">
+                    <h5 class="card-title">Sucess card</h5>
+                    <a href="#" >Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 nm">
+                <div class="card card4">
+                  <div class="card-body">
+                    <h5 class="card-title">danger card</h5>
+                       <a href="#" >Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="charts">
+            <div class="row">
+              <div class="col-6 cha">
+                <div class="card-header">
+                  Area Chart Example
+               </div>
+                <div id="main" style="width:600px; height:400px;"></div>
+              </div>
+              <div class="col-6 cha">
+                <div class="card-header">
+                    Area Chart Example
+                 </div>
+                <div id="bar" style="width:600px; height:400px;"></div>
+                </div>
+              </div>
+            </div>
+            
+      
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/echarts/dist/echarts.js"></script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main'));
+
+// specify chart configuration item and data
+var option = {
+xAxis: {
+    type: 'category',
+    data: ['jasodf', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+},
+yAxis: {
+    type: 'value'
+},
+series: [{
+    data: [820, 932, 901, 934, 1290, 1330, 1320],
+    type: 'line'
+}]
+};
+
+// use configuration item and data specified to show chart
+myChart.setOption(option)
+
+      var myChart = echarts.init(document.getElementById('bar'));
+
+// specify chart configuration item and data
+var option = {
+  xAxis: {
+      type: 'category',
+      data: ['jasodf', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+      type: 'value'
+  },
+  series: [{
+      data: [820, 932, 901, 934, 1290, 1330, 1320],
+      type: 'bar'
+  }]
+};
+
+// use configuration item and data specified to show chart
+myChart.setOption(option)
+       
+        
+    
+
+  
+
+     
+      
+  </script>
+
+
+
+</body>
+</html>

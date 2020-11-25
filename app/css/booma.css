@@ -14,7 +14,10 @@ body {
 /* .bi{
   padding-left: 25px;
 } */
-  
+  h3{
+    padding-left: 30px;
+    padding-top: 18px;
+  }
 #menu-toggle{
   margin-left: 55px;
   margin-top: 11px;
@@ -108,18 +111,19 @@ body {
   font-weight: 350px;
   color: black;
 }
-.charts{
-  background-color: rgb(230, 227, 227);
-  margin: 13px 0 0 13px;
-}
 .Tables{
   margin-top:10px ;
 }
 .form {
    line-height: 20px;
-background-color: rgb(219, 235, 234);
+   word-spacing: 20px;
+/* background-color: rgb(219, 235, 234); */
    /* margin: 50px;
   padding: 40px; */
+  background-image: url(../images/coronavirus-dark-1200x800-CDC-CROPPED1111.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+color:white;
 }
 .content{
   padding-left: 150px;
@@ -132,4 +136,6 @@ background-color: rgb(219, 235, 234);
 }
 .frm{
   display:none;
+}.par{
+  font-size: 20px;
 }
