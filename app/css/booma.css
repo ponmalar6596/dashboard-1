@@ -11,13 +11,20 @@ body {
 #wrapper {
   overflow-x: hidden;
 }
+.page-title{
+  margin-top: 80px;
+  margin-bottom: 25px;
+}
 /* .bi{
   padding-left: 25px;
 } */
-  h3{
+.sb-topnav{
+  padding-left: 240px;
+}
+  /* h3{
     padding-left: 30px;
     padding-top: 18px;
-  }
+  } */
 #menu-toggle{
   margin-left: 55px;
   margin-top: 11px;
@@ -130,6 +137,7 @@ color:white;
 }
 .side-icon{
   padding-right: 15px;
+  position: ;
 }
 .tab{
   display:none;
@@ -138,4 +146,11 @@ color:white;
   display:none;
 }.par{
   font-size: 20px;
+}
+.sb-topnav .bt{
+  position: fixed;
+}
+h3{
+  color: #f8f9fc;
+  position: fixed;
 }
