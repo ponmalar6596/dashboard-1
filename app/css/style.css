@@ -44,9 +44,11 @@ body{
  
    #page-content-wrapper {
      min-width: 0;
-     width: 100%;
+     width: 80%;
    }
- 
+ .page-title{
+   padding-top: 50px;
+ }
    #wrapper.toggled #sidebar-wrapper {
      margin-left: -15rem;
    }
@@ -76,9 +78,7 @@ body{
   background-color: #007bff;
   /* box-shadow: 0 0 10px black; */
  }
- .card-statistics .card-body{
-  /* box-shadow: 0 0 10px black; */
- }
+
  .card-statistics .card-body .card-title{
      /* text-transform: uppercase; */
      font-size: 1em;
@@ -115,19 +115,32 @@ body{
 }
 .button{
   margin-left: 30rem;
-
 }
-button{
+.user{
+  width: 75%;
+  margin-top: 10%;
+  margin-left: 280px;
+  /* box-shadow: 1px solid black; */
+  /* margin-top:50%; */
+  /* background-color: blue; */
+}
+label{
+  color: black;
+}
+/* button{
   color: whitesmoke;
 }
 .btn.btn-flat {
   border-radius: 0;
   border-width: 1px;
   box-shadow: white;
-}
-.search{
+} */
+/* .btn{
+  margin-left: 15%;
+} */
+/* .search{
   background-color: royalblue;
-}
+} */
 .sidebar{
   position: fixed;
   width: 15.6rem;
@@ -145,4 +158,20 @@ table {
 }
 #tb{
   width: 50%;
+}
+.btn-lg{
+  margin-left: 80%;
+}
+.patients{
+  padding-top: 9px;
+}
+.bttn{ 
+  text-align: center;
+}
+.edit{
+  margin-left: 20px;
+}
+.table-row{
+  margin-left: 50px;
+  margin-top: 20px;
 }
