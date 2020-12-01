@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>NEW RECORDS</h2>
+      <form>
+        <div class="form-row">
+          <!-- <h2>new records</h2> -->
+          <div class="form-group bg-light shadow-bottom shadow-lg col-md-6">
+            <label for="pname">patient name</label>
+            <input type="text" class="form-control" id="pname" />
+          </div>
+          <div class="form-group bg-light shadow-bottom shadow-lg col-md-2">
+            <label for="age">age</label>
+            <input type="text" class="form-control" id="age" />
+          </div>
+        </div>
+        <div class="form-group bg-light shadow-bottom shadow-lg">
+          <label for="inputAddress">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="enter your Address"
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group bg-light shadow-lg shadow-bottom col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="form-group bg-light shadow-bottom shadow-lg col-md-4">
+            <label for="inputcountry">country</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>afhanistan</option>
+              <option>china</option>
+              <option>india</option>
+              <option>italy</option>
+              <option>usa</option>
+            </select>
+          </div>
+          <div class="form-group bg-light shadow-lg shadow-bottom col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" />
+          </div>
+        </div>
+        <div class="form-group shadow bg-light">
+          <label>symptoms</label>
+          <div class="form-check">
+            <div class="row">
+              <div class="col-md-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck1"
+                />
+                <label class="form-check-label" for="gridCheck1"> fever </label>
+              </div>
+
+              <div class="col-md-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck2"
+                />
+                <label class="form-check-label" for="gridCheck2"> cough </label>
+              </div>
+
+              <div class="col-md-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck3"
+                />
+                <label class="form-check-label" for="gridCheck3">
+                  lack odour and taste
+                </label>
+              </div>
+
+              <div class="col-md-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck4"
+                />
+                <label class="form-check-label" for="gridCheck4">
+                  body pain
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- treatment -->
+        <div class="row">
+          <div class="col-6 shadow bg-light">
+            <div>
+              <p>outcome of treatment</p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="exampleRadios1">
+                  recovered
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="exampleRadios2">
+                  on-treatment
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios3"
+                  value="option3"
+                />
+                <label class="form-check-label" for="exampleRadios3">
+                  death
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- infect -->
+          <div class="col-6 bg-light shadow">
+            <div class="row">
+              <div class="col-3">
+                <div>mode of spread</div>
+              </div>
+              <div class="col-3">
+                <div class="form-group width">
+                  <!-- <label for="exampleFormControlSelect1">Example select</label> -->
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="spread" selected disabled>
+                      select mode of spread
+                    </option>
+                    <option value="contact">direct contact</option>
+                    <option value="migration">migration</option>
+                    <option value="transport">transport</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- treatment -->
+      </form>
+    </div>
+  </body>
+</html>

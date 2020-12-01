@@ -1,0 +1,110 @@
+body {
+  background-color: #f8f9fc;
+  /* background-image: linear-gradient(to bottom right,rgb(26, 185, 248),rgb(6, 230, 6)); */
+}
+
+#wrapper {
+  overflow-x: hidden;
+  /* background-image: linear-gradient(to bottom right,rgb(26, 185, 248),rgb(6, 230, 6));; */
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.card-statistics {
+  border: none;
+  /* border-left: solid 4px; */
+  border-radius: 6px;
+}
+
+.card-statistics .card-body {
+}
+.card-statistics .card-body .card-title {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-top: 10px;
+  margin-bottom: 0.2rem;
+}
+.card .card-text {
+  color: white;
+}
+/* .card .card-footer{
+      color: white;
+  }  */
+.card-statistics .card-body .card-text {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+nav {
+  background-color: white;
+}
+.list-group-item .list-group-item-action .k {
+  background-color: white;
+}
+
+.table .table-hover .table-light:active {
+  color: tomato;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.form-control .width {
+  width: 50px;
+}
+.navbar {
+  height: 50px;
+}
+
+.container {
+  margin: auto;
+}

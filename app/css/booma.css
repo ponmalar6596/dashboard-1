@@ -11,14 +11,20 @@ body {
 #wrapper {
   overflow-x: hidden;
 }
+.page-title{
+  margin-top: 80px;
+  margin-bottom: 25px;
+}
 /* .bi{
   padding-left: 25px;
 } */
-.bt{
-  margin-left: 100px;
-    }
-   
-
+.sb-topnav{
+  padding-left: 240px;
+}
+  /* h3{
+    padding-left: 30px;
+    padding-top: 18px;
+  } */
 #menu-toggle{
   margin-left: 55px;
   margin-top: 11px;
@@ -32,7 +38,7 @@ body {
   transition: margin 0.25s ease-out;
 }
 .list-group-item{
-  padding-left: 65px;
+  padding-left: 45px;
   font-variant: small-caps;
   color: #f8f9fc;
   font-size: 18px;
@@ -112,19 +118,39 @@ body {
   font-weight: 350px;
   color: black;
 }
-.charts{
-  background-color: rgb(230, 227, 227);
-  margin: 13px 0 0 13px;
-}
 .Tables{
   margin-top:10px ;
 }
 .form {
    line-height: 20px;
-background-color: rgb(219, 235, 234);
+   word-spacing: 20px;
+/* background-color: rgb(219, 235, 234); */
    /* margin: 50px;
   padding: 40px; */
+  background-image: url(../images/coronavirus-dark-1200x800-CDC-CROPPED1111.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+color:white;
 }
 .content{
   padding-left: 150px;
+}
+.side-icon{
+  padding-right: 15px;
+  position: ;
+}
+.tab{
+  display:none;
+}
+.frm{
+  display:none;
+}.par{
+  font-size: 20px;
+}
+.sb-topnav .bt{
+  position: fixed;
+}
+h3{
+  color: #f8f9fc;
+  position: fixed;
 }
