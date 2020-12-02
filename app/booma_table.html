@@ -5,85 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../app/css/booma.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../vendor/icofont/icofont.min.css">
+    <link rel="stylesheet" href="../booma_table.html">
+        <title>Document</title>
 </head>
 <body>
-     <!-- <div class="Tables" id="tab">
-        <table class="table table-hover table-bordered table-striped"> 
-          <h2>COVID-19 STS</h2>
-          <thead class="thead-dark"><tr>
-            <th>#</th>
-          <th >Month</th>
-          <th >Total cases</th>
-          <th >Active</th>
-          <th >Discharged</th>
-          <th >Deaths</th>
-        </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td> Jan</td>
-            <td> 3000</td>
-            <td> 295</td>
-            <td> 2500</td>
-            <td> 205</td>
-          </tr> <tr>
-            <th>2</th>
-            <td> Feb</td>
-            <td> 30560</td>
-            <td> 4000</td>
-            <td> 25500</td>
-            <td> 1060</td>
-          </tr> <tr>
-            <th>3</th>
-            <td> Mar</td>
-            <td> 70465</td>
-            <td> 45869</td>
-            <td> 22584</td>
-            <td> 2012</td>
-          </tr> <tr>
-            <th>4</th>
-            <td> Apr</td>
-            <td> 90795</td>
-            <td> 40085</td>
-            <td> 46548</td>
-            <td> 4162</td>
-          </tr> <tr>
-            <th>5</th>
-            <td> May</td>
-            <td> 120346</td>
-            <td> 75896</td>
-            <td> 42365</td>
-            <td> 2085</td>
-          </tr> <tr>
-            <th>6</th>
-            <td> June</td>
-            <td> 170456</td>
-            <td> 85692</td>
-            <td> 79586</td>
-            <td> 5178</td>
-          </tr>
-        </tbody>
-        </table>
-      </div> -->
-      <div class="Tables">
-        <table class="table table-striped table-bordered">
-          <thead class="thead-dark"><tr>
-            <th scope="col">#</th>
-            <th scope="col">Population</th>
-            <th scope="col">Infectious Peoples</th>
-            <th scope="col">Confirmed Cases</th>
-            <th scope="col">Recovered Peoples</th>
-            <th >Deaths</th>
-          </thead><tbody><tr class="ng-star-inserted">
-            <th scope="row">1</th><td>
-              <img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"> Russia </td>
-              <td>17,075,200</td><td>146,989,754</td><td>15,67,890</td></tr><tr class="ng-star-inserted"><th scope="row">2</th><td>
-                <img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"> Canada </td><td>9,976,140</td><td>36,624,199</td><td>67,98,099</td></tr><tr class="ng-star-inserted"><th scope="row">3</th><td><img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"> United States </td><td>9,629,091</td><td>324,459,463</td><td>65,78,345</td></tr><tr class="ng-star-inserted"><th scope="row">4</th><td><img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"> China </td><td>9,596,960</td><td>1,409,517,397</td><td>56,67,234</td></tr><!--bindings={
-          "ng-reflect-ng-for-of": "[object Object],[object Object"
-        }--></tbody></table>
-        
-      </div>
+  <header>
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <button class="bt bg-dark" onclick="myFunctionnn()" id="bn">
+        <i class="icofont-navigation-menu"></i>
+      </button>
+      <!-- <h3 style="font-variant: small-caps;">COVID-19 </h3>  -->
+
+           <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><svg class="svg-inline--fa fa-bars fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg><!-- <i class="fas fa-bars"></i> Font Awesome fontawesome.com --></button>
+      <!-- Navbar Search-->
+      <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+          <div class="input-group">
+                                 <div class="input-group-append">
+                               </div>
+          </div>
+      </form>
+      <!-- Navbar-->
+      <ul class="navbar-nav ml-auto ml-md-0">
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg class="svg-inline--fa fa-user fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg><!-- <i class="fas fa-user fa-fw"></i> Font Awesome fontawesome.com --></a>
+             
+          </li>
+      </ul>
+  </nav>
+  </header>
+  <div class="d-flex" id="wrapper">
+  <div class="back bg-dark" id="sidebar-wrapper">
+    <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button> -->
+   
+                               <div class="list-group list-group-flush" id="ds">
+    <a href="#" class="list-group-item list-group-item-action bg-dark">
+      <i class="icofont-dashboard icofont-1x side-icon"></i>Dashboard</a>
+    <a href="#" class="list-group-item list-group-item-action bg-dark">
+      <i class="icofont-copy icofont-1x side-icon"></i>Layouts</a>
+               <a href="booma_chart.html" class="list-group-item list-group-item-action bg-dark">
+      <i class="icofont-chart-pie icofont-1x side-icon"></i>Charts</a>
+    <a href="booma_table.html" class="list-group-item list-group-item-action bg-dark">
+      <i class="icofont-table icofont-1x side-icon"></i>Tables</a>
+   <a href="booma_form.html" class="list-group-item list-group-item-action bg-dark">
+    <i class="icofont-edit icofont-1x side-icon"></i>Forms</a>
+    <a href="booma_cont.html" class="list-group-item list-group-item-action bg-dark">
+      <i class="icofont-contacts icofont-1x side-icon"></i>Contact Us</a>
+  </div>
+</div>
+<div class="carousel-inner">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="container-fluid">
+    <div class="carousel-item active">
+        <div class="Tables" id="tab">
+           <table class="table table-hover table-bordered table-striped"> 
+             <h2>COVID-19 STS</h2>
+                    <thead class="thead-dark"><tr>
+               <th>#</th>
+             <th >Month</th>
+             <th >Total cases</th>
+             <th >Active</th>
+             <th >Discharged</th>
+             <th >Deaths</th>
+           </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th>1</th>
+               <td> Jan</td>
+               <td> 3000</td>
+               <td> 295</td>
+               <td> 2500</td>
+               <td> 205</td>
+             </tr> <tr>
+               <th>2</th>
+               <td> Feb</td>
+               <td> 30560</td>
+               <td> 4000</td>
+               <td> 25500</td>
+               <td> 1060</td>
+             </tr> <tr>
+               <th>3</th>
+               <td> Mar</td>
+               <td> 70465</td>
+               <td> 45869</td>
+               <td> 22584</td>
+               <td> 2012</td>
+             </tr> <tr>
+               <th>4</th>
+               <td> Apr</td>
+               <td> 90795</td>
+               <td> 40085</td>
+               <td> 46548</td>
+               <td> 4162</td>
+             </tr> <tr>
+               <th>5</th>
+               <td> May</td>
+               <td> 120346</td>
+               <td> 75896</td>
+               <td> 42365</td>
+               <td> 2085</td>
+             </tr> <tr>
+               <th>6</th>
+               <td> June</td>
+               <td> 170456</td>
+               <td> 85692</td>
+               <td> 79586</td>
+               <td> 5178</td>
+             </tr>
+           </tbody>
+           </table>
+         </div> 
+         </div>
+         </div>
+    </div>
+    <div class="container-fluid">
+            <div class="Tables">
+         <table class="table table-striped table-bordered">
+           <thead class="thead-dark"><tr>
+             <th scope="col">#</th>
+             <th scope="col">Population</th>
+             <th scope="col">Infectious Peoples</th>
+             <th scope="col">Confirmed Cases</th>
+             <th scope="col">Recovered Peoples</th>
+             </thead>
+             <tbody><tr class="ng-star-inserted">
+             <th scope="row">1</th><td>
+               <img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"> Russia </td>
+               <td>17,075,200</td><td>146,989,754</td><td>15,67,890</td></tr><tr class="ng-star-inserted"><th scope="row">2</th><td>
+                 <img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"> Canada </td><td>9,976,140</td><td>36,624,199</td><td>67,98,099</td></tr><tr class="ng-star-inserted"><th scope="row">3</th><td><img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"> United States </td><td>9,629,091</td><td>324,459,463</td><td>65,78,345</td></tr><tr class="ng-star-inserted"><th scope="row">4</th><td><img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"> China </td><td>9,596,960</td><td>1,409,517,397</td><td>56,67,234</td></tr>
+                       </tbody></table>
+                      </div>
+         </div>
+    </div> 
+    
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+   
+     <script src="../node_modules/jquery/dist/jquery.js"></script>
+   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="../node_modules/echarts/dist/echarts.js"></script>
+   <script src="booma.js"></script>
+   <!-- <script src="../node_modules/popper.js/dist/popper.js"></script> -->
+   <script type="text/javascript">
+   </script>
 </body>
+
 </html>
