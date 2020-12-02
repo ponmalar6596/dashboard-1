@@ -13,8 +13,10 @@
 
 <body>
     <header>
-        <!-- <h3 style="font-variant: small-caps;">COVID-19 </h3>  -->
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark fixed-top">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark container-fluid fixed-top">
+            <div class="sidebar-heading">
+
+            </div>
             <button class="bt bg-dark" onclick="myFunctionnn()" id="bn">
         <i class="icofont-navigation-menu"></i>
       </button>
@@ -28,12 +30,15 @@
                 </div>
             </form>
             <!-- Navbar-->
-            <ul class="navbar-nav ml-auto ml-md-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg class="svg-inline--fa fa-user fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg><!-- <i class="fas fa-user fa-fw"></i> Font Awesome fontawesome.com --></a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="icofont-user"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Login</a>
 
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="d-flex" id="wrapper">
@@ -42,16 +47,14 @@
             <div class="list-group list-group-flush" id="ds">
                 <a href="#" class="list-group-item list-group-item-action bg-dark">
                     <i class="icofont-dashboard icofont-1x side-icon"></i>Dashboard</a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark">
-                    <i class="icofont-copy icofont-1x side-icon"></i>Layouts</a>
-                <a href="booma_chart.html" class="list-group-item list-group-item-action bg-dark">
-                    <i class="icofont-chart-pie icofont-1x side-icon"></i>Charts</a>
-                <a href="booma_table.html" class="list-group-item list-group-item-action bg-dark">
-                    <i class="icofont-table icofont-1x side-icon"></i>Tables</a>
-                <a href="booma_form.html" class="list-group-item list-group-item-action bg-dark">
-                    <i class="icofont-edit icofont-1x side-icon"></i>Forms</a>
-                <a href="booma_cont.html" class="list-group-item list-group-item-action bg-dark">
-                    <i class="icofont-contacts icofont-1x side-icon"></i>Contact Us</a>
+                <!-- <a href="booma_chart.html" class="list-group-item list-group-item-action bg-dark">
+                    <i class="icofont-chart-pie icofont-1x side-icon"></i>Charts</a> -->
+                <a href="booma_patients.html" class="list-group-item list-group-item-action bg-dark">
+                    <i class="icofont-table icofont-1x side-icon"></i>Patients</a>
+                <a href="booma_foll.html" class="list-group-item list-group-item-action bg-dark">
+                    <i class="icofont-edit icofont-1x side-icon"></i>Followups</a>
+                <a href="booma_user.html" class="list-group-item list-group-item-action bg-dark">
+                    <i class="icofont-contacts icofont-1x side-icon"></i>User</a>
             </div>
         </div>
         <div class="container-fluid">
@@ -114,9 +117,6 @@
         </div>
 
     </div>
-    </div>
-    <!-- /#page-content-wrapper -->
-
     </div>
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -233,5 +233,7 @@
     </script>
 
 </body>
+
+</html>
 
 </html>
