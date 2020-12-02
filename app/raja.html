@@ -1,164 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../vendor/icofont/demo.html">
-    <link rel="stylesheet" href="./raja.css">
-    <link rel="stylesheet" href="../vendor/icofont/icofont.min.css">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../app/main.js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link  rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
   
-</head>
-<body>
-  <div class="container-fluid bg-dark head">
-     <div class="row"> 
-        <div onclick="myfunction" class="col-4 first">
-           <i class="icofont-navigation-menu menu"></i> 
-          </div>  
-               <div class=" col-4 input-group">
-                  <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                       <button class="btn btn-primary" type="button"><svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg><!-- <i class="fas fa-search"></i> Font Awesome fontawesome.com --></button>
-                        </div> 
-                         </div>  
-                        
-                   
-                 <div class="col-4 ">
-             <i class="fa fa-user-circle-o persion" aria-hidden="true"></i>
-           </div>
-          </div>
-        </div>
- 
-     
+    <link rel="stylesheet" href="../vendor/icofont/icofont.min.css" />
+  <!-- <link rel="stylesheet" href="./main.js">   -->
+       <title>Document</title>
+  </head>
+  <body>
     <div class="d-flex" id="wrapper">
-       
+      <!-- Sidebar -->
+     
+      <div class="bg-light bg-dark sidebar" id="sidebar-wrapper">
+        <nav class="navbar navbar-dark bg-dark">
+        <div class="sidebar-heading">About</div>
+        <div class="list-group list-group-flush"id="clk">
+          <a href="#" class="list-group-item list-group-item-action bg-dark"
+            >
+            <i class="icofont-dashboard icofont-1x side-icon"></i>Dashboard</a
+          >
+          <a href="#" class="list-group-item list-group-item-action bg-dark"
+            ><i class="icofont-copy icofont-1x side-icon"></i>Layouts</a
+          >
+          <a href="#" class="list-group-item list-group-item-action bg-dark"
+            ><i class="icofont-book-alt icofont-1x side-icon"></i>Pages</a
+          >
+          <a href="#" class="list-group-item list-group-item-action bg-dark"
+            ><i class="icofont-chart-pie icofont-1x side-icon"></i>Charts</a
+          >
+          <a href="#" class="list-group-item list-group-item-action bg-dark"
+            ><i class="icofont-table icofont-1x side-icon"></i>Tables</a
+          >
+          <a href="#" class="list-group-item list-group-item-action bg-dark"
+            ><i class="icofont-edit icofont-1x side-icon"></i>Forms</a
+          >
+        </div>
+        </nav>
+      </div>
+    
+      <!-- /#sidebar-wrapper -->
 
-        <!-- Sidebar -->
-        <div class="bg-dark border-right board" id="sidebar-wrapper">
-         
-          <div class="list-group list-group-flush">
-            <a href="#" class="list-group-item list-group-item-action bg-dark">Dashboard</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark"><i class="icofont-layout icon"></i>layouts</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark">pages</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark "> <i class="icofont-chart-bar-graph icon"></i>charts</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark"><i class="icofont-table icon"></i>tables</a>
-            <a href="#" class="list-group-item list-group-item-action bg-dark"><i class="fa fa-file-text-o icon" aria-hidden="true"></i>forms</a>
+      <!-- Page Content -->
+      <div id="page-content-wrapper" class="entire">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom "
+        >
+        <button type="button" class="btn btn-default btn-flat"onclick="myfunction()"id="bt"><i class="navbar-toggler-icon"></i></button>
+          <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button> -->
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Search for..."
+                aria-label="Search"
+                aria-describedby="basic-addon2"
+              />
+              <!-- <i class="icofont-ui-search icofont-2x Search"></i> -->
+              <!-- <i class="icofont-search icofont-1x"></i> -->
+              <!-- <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                <i class="icofont-business-man icofont-2x"></i>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item" href="#">Active Log</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Loggout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container-fluid">
+          <div class="page-title">
+            <h1>Dashboard</h1>
+          </div>
+          <div class="page-content ">
+            <div class="statistics">
+              <div class="row">
+                <div class="col-3">
+                  <div class="card card-statistics varient-1">
+                    <div class="card-body">
+                      <h5 class="card-title">Confirmed Cases</h5>
+                      <a class="small text-white stretched-link" href="#"></a>
+                      <p class="card-text">10,345</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card card-statistics varient-2">
+                    <div class="card-body">
+                      <h5 class="card-title">Infectious People</h5>
+                      <p class="card-text">1,00,435</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card card-statistics varient-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Recover People</h5>
+                      <p class="card-text">1,345</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card card-statistics varient-4">
+                    <div class="card-body">
+                      <h5 class="card-title">Hospital Admissions</h5>
+                      <p class="card-text">8,345</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="container-fluid">
-            <div class="page-title Dashboard">
-                <h1>Dashboard</h1>
+          <div class="row">
+            <div class="col-6">
+              <div class="card">                  
+                 <h5 class="card-header"> <i class="icofont-chart-histogram-alt side-icon  icofont-1x"></i> Line Chart</h5>
+                  <div class="card-body">
+                    <div id="main" style="width: 500px; height: 300px"></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <h5 class="card-header"> <i class="icofont-chart-bar-graph side-icon icofont-1x"></i> Bar Chart</h5>
+                  <div class="card-body">
+                    <div id="bar" style="width: 500px; height: 300px"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="card card-default">
+            <div class="card-header"><i class="icofont-chart-histogram-alt side-icon"></i<h3>Line Chart</h3>
+             <div class="col-6">
+              <div class="card-body">
+                <h4 class="card-title line">Line Chart</h4> 
+              <div id="main" style="width: 600px; height: 400px"></div>
+            </div>
+            </div>
+            </div>
+            <div class="card-header">
+            <div class="col-6">
+              <div class="card-body">
+                <h4 class="card-title"><i class="icofont-chart-bar-graph side-icon"></i>Bar Chart</h4>   
+              <div id="bar" style="width: 600px; height: 400px"></div>
+              </div>
+            </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="Tables">
+          <table class="table table-striped">
+            <thead><tr>
+              <th scope="col">#</th>
+              <th scope="col">Population</th>
+              <th scope="col">Infectious Peoples</th>
+              <th scope="col">Confirmed Cases</th>
+              <th scope="col">Recovered Peoples</th>
+            </thead><tbody><tr class="ng-star-inserted">
+              <th scope="row">1</th><td>
+                <img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"> Russia </td>
+                <td>17,075,200</td><td>146,989,754</td><td>15,67,890</td></tr><tr class="ng-star-inserted"><th scope="row">2</th><td>
+                  <img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"> Canada </td><td>9,976,140</td><td>36,624,199</td><td>67,98,099</td></tr><tr class="ng-star-inserted"><th scope="row">3</th><td><img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"> United States </td><td>9,629,091</td><td>324,459,463</td><td>65,78,345</td></tr><tr class="ng-star-inserted"><th scope="row">4</th><td><img class="mr-2" style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"> China </td><td>9,596,960</td><td>1,409,517,397</td><td>56,67,234</td></tr><!--bindings={
+            "ng-reflect-ng-for-of": "[object Object],[object Object"
+          }--></tbody></table>
+          
+        </div>
+  <div class="container-fluid">
+    <div class="card card-default">
+      <div class="card-header">
+        <h3 class="card-title">Patient Details</h3>
+
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+          <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
         <div class="row">
-            <div class="col-sm-3 nm">
-              <div class="card card1">
-                <div class="card-body">
-                  <h5 class="card-title">primary card</h5>
-                     <a href="#" >Go somewhere</a>
-                </div>
-              </div>
+          <div class="col-md-6" data-select2-id="29">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter Name">
             </div>
-            <div class="col-sm-3 nm ">
-              <div class="card card2">
-                <div class="card-body">
-                  <h5 class="card-title">warning card</h5>
-                    <a href="#">Go somewhere</a>
-                </div>
-              </div>
+            <!-- /.form-group -->
+            <div class="form-group">
+              <label>Mobile Number</label>
+              <input type="number" class="form-control" id="number" placeholder="Enter Number">
             </div>
-            <div class="col-sm-3 nm ">
-                <div class="card card3">
-                  <div class="card-body">
-                    <h5 class="card-title">Sucess card</h5>
-                    <a href="#" >Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3 nm">
-                <div class="card card4">
-                  <div class="card-body">
-                    <h5 class="card-title">danger card</h5>
-                       <a href="#" >Go somewhere</a>
-                  </div>
-                </div>
-              </div>
+            <!-- /.form-group -->
           </div>
-          </div>
-          <div class="charts">
-            <div class="row">
-              <div class="col-6 cha">
-                <div class="card-header">
-                  Area Chart Example
-               </div>
-                <div id="main" style="width:600px; height:400px;"></div>
-              </div>
-              <div class="col-6 cha">
-                <div class="card-header">
-                    Area Chart Example
-                 </div>
-                <div id="bar" style="width:600px; height:400px;"></div>
-                </div>
-              </div>
+          <!-- /.col -->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Corona Symptoms</label>
+              <div>
+        <input type="checkbox" id="l_tamil"name="l_tamil"/>
+      <label for="l_tamil">Fever</label>
+      <!-- <input type="checkbox" id="l_english"name="l_english">
+      <label for="l_english">Dry Cough</label> -->
+      <input type="checkbox" id="l_tamil"name="l_tamil"/>
+      <label for="l_tamil">Tiredness</label>
+      <input type="checkbox" id="l_english"name="l_english">
+      <label for="l_english">Diarrhoea</label>
+      <input type="checkbox" id="l_tamil"name="l_tamil"/>
+      <label for="l_tamil">Headache</label>
+      <!-- <input type="checkbox" id="l_english"name="l_english">
+      <label for="l_english">Loss of taste or smell</label> -->
+      </div>
             </div>
-            
+            <!-- /.form-group -->
+            <div class="form-group">
+              <label>Gender</label>
+              <div>
+      <input type="radio" id="g_male"name="g_male"/>
+      <label for="g_male">Male</label>
+      <input type="radio" id="g_female"name="g_female"/>
+      <label for="g_female">Female</label>
+      </div>
+      </div>
+     
+            <!-- /.form-group -->
+          </div>
+          <div class="button">
+        
+            <button type="button" class="btn btn-block btn-primary">Submit</button>
+        </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        
+        <!-- /.row -->
+      </div>
+      <!-- /.card-body -->
       
     </div>
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-      <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../node_modules/echarts/dist/echarts.js"></script>
-<script type="text/javascript">
-    var myChart = echarts.init(document.getElementById('main'));
-
-// specify chart configuration item and data
-var option = {
-xAxis: {
-    type: 'category',
-    data: ['jasodf', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-},
-yAxis: {
-    type: 'value'
-},
-series: [{
-    data: [820, 932, 901, 934, 1290, 1330, 1320],
-    type: 'line'
-}]
-};
-
-// use configuration item and data specified to show chart
-myChart.setOption(option)
-
-      var myChart = echarts.init(document.getElementById('bar'));
-
-// specify chart configuration item and data
-var option = {
-  xAxis: {
-      type: 'category',
-      data: ['jasodf', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-  },
-  yAxis: {
-      type: 'value'
-  },
-  series: [{
-      data: [820, 932, 901, 934, 1290, 1330, 1320],
-      type: 'bar'
-  }]
-};
-
-// use configuration item and data specified to show chart
-myChart.setOption(option)
-       
+  </div>
         
-    
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/echarts/dist/echarts.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="../node_modules/popper.js/dist/popper.js"></script> -->
+    <script type="text/javascript">
+      // based on prepared DOM, initialize echarts instance
+      var myChart = echarts.init(document.getElementById("main"));
 
-  
+      // specify chart configuration item and data
+      var option = {
+       
+    xAxis: {
+              type: 'category',
+        boundaryGap: false,
+        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'sep', 'Oct', 'Nov', 'Dec']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+              data: [820,10086,43907,56789, 67988,89080,153328, 199501, 243934, 341290, 541330, 671320,],
+        type: 'line',
+        areaStyle: {},
+        color: 'skyblue'
+    }]
+};
 
-     
-      
-  </script>
+      // use configuration item and data specified to show chart
+      myChart.setOption(option);
+      var myChart = echarts.init(document.getElementById("bar"));
 
-
-
-</body>
+      // specify chart configuration item and data
+      var option = {
+        xAxis: {
+          type: "category",
+          data: ["Ind", "Chi", "Pak", "US", "Sin", "Jap", "Kor"],
+        },
+        yAxis: {
+          type: "value",
+        },
+        series: [
+          {
+            data: [390806,923267, 995017, 243934, 341290, 541330, 671320,],
+            type: "bar",
+            showBackground: true,
+            color:'pink',
+            backgroundStyle: {
+              color: "rgba(220, 220, 220, 0.8)",
+            },
+          },
+        ],
+      };
+      // use configuration item and data specified to show chart
+      myChart.setOption(option);
+    </script>
+  </body>
 </html>
