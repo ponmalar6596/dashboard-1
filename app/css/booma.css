@@ -1,14 +1,13 @@
 .back {
-    color: #f8f9fc;
     font-variant: small-caps;
 }
 
 body {
-    background-color: #f8f9fc;
+    /* background-color: #f8f9fc; */
 }
 
 .list-group {
-    padding-top: 20px;
+    padding-top: 55px;
 }
 
 #wrapper {
@@ -52,7 +51,7 @@ body {
 .list-group-item {
     padding-left: 45px;
     font-variant: small-caps;
-    color: #f8f9fc;
+    color: black;
     font-size: 18px;
 }
 
