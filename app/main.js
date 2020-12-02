@@ -1,5 +1,5 @@
 function myfunction(){
-    var y = document.getElementById("clk");
+    var y = document.getElementById("ds");
     if (y.style.display === "none") {
       y.style.display = "block";
     } else {
