@@ -1,200 +1,36 @@
-.head{
-    height: 70px;
-}
-.card1{
-  background-color: blue;  
-}
-.card2{
-    background-color:yellow;  
-  }
-  .card3{
-    background-color: green;  
-  }
-  .card4{
-    background-color:red;  
-  }
-  .Dashboard{
-      padding-top: 80px;
-  }
-  
-  .ten{
-    margin-top:20px;
-  }
-  .nm{
-     padding-top: 20px; 
-  }
-  .cha{
-    padding-top: 30px;  
-  }
- 
-  .list-group-item
-  {
-      color: white;
-     
-  }
-
- .head .persion{
-  padding-top:20px ;
-   margin-right: 0px;
-   font-size: 30px;
-   color: white;
- }
- 
- 
- .input-group{
-  padding-top:20px ;
-  margin-right: 0px;
-  padding-left:250px;
-  font-size: 50px;
-   }
-
-    .icon{
-  padding-right: 15px; 
- }
- 
- .contact-form{
-   max-width: 550px;
-   margin: 0 auto;
-   background-color: black;
-   display: flex;
- }
- 
-
-.user-login-5 .login-container>.login-content>.login-form .form-control {
-    margin-bottom: 50px;
-}
-.one {
-    width: 100%;
-    padding: 10px 0;
-    border:red;
-    border-bottom: 1px solid;
-    color:red;
-    font-size: 14px;
-}
-.user-login-5 .form-group.valid {
-    border-bottom: 1px solid #a0a9b4!important
-}
-.raja{
-  width: 180px;
-  position: absolute;
-background-image: url("./images/10214105-Black_9.jpg");
- padding: 50px 50px 50px 50px;
-top: 40%;
-left: 30%;
-transform: translate(-50%,-50%);
-
-}
-.raja h1{
- flex:left;
- font-size: 40px;
- border-bottom: 6px solid #4caf50;
- width: 110px;
- margin-bottom: 40px;
- padding: 9px 0;
- color:white;
-}
-.icofont-user{
- 
-color:white;
-flex: left;
-text-align: center;
-
-}
-.textbox
+.ca1
 {
+  background-color: blue;
+  border-radius: 0.25rem;
+}
+.ca2{
+  background-color: yellow;
+  border-radius: 0.25rem;
+}
+.ca3{
+  background-color:green;
+  border-radius: 0.25rem;
+}
+.ca4{
+  background-color:red;
+  border-radius: 0.25rem;
+}
+.active{
+  background-color: white;
+  display: flex; 
+    
+    padding: 0.75rem 1rem;
+
+    background-color: #e9ecef;
+    
+}
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
   width: 100%;
-  overflow: hidden;
-  font-size: 20px;
-  padding: 8px 0;
-  margin:8px 0;
-  border-bottom: 1px solid;
-  background:none;
-  border-color: #4caf50;
-  outline: none;
-
 }
-.btn{
-  width: 100%;;
-  background:none;
-  border:2px solid green;
-  margin: 15px;
-  font-size: 15px;
-  cursor: pointer;
-  color: white;
-
-}
-.main{
-  background-image: url("./images/download.jpg");
-}
-.textbox input{
-  border: none;
-  outline: none;
-  background:none;
-  color: white;
-
-}
-.hey{
-  justify-content: end;
-}
-
-.can
-{
-  margin-left:30px;
-  margin-right:30px;
-}
-.can1
-{
-  margin-left:13px;
-  margin-right:30px; 
-}
-.can2
-{
-  margin-left:60px; 
-  margin-right:30px;
-}
-.can3 
-{
-  margin-left:73px;
-  margin-right:30px;   
-}
-.ui
-{
-  padding-bottom: 5px0px;
-  border-bottom: 6px solid;
-}
-.qwe
-{
-  padding-top: 20px;
-  padding-left: 90px;
-}
-.qwee{
-  margin-right: 10px;
-}
-#sidebar-wrapper{
+.board{
   width: 250px;
-  padding-top: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
- 
-  
-
-
-
-
-
-
-
-
-
-
