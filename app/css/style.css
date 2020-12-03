@@ -63,7 +63,7 @@ body{
      /* border-radius: 10px; */
  }
  .card-statistics.varient-1{
-  background-color: #dc3545 ;
+  background:linear-gradient(rgb(141, 10, 82),rgb(158, 5, 158));
   /* box-shadow: 0 0 10px black; */
  }
  .card-statistics.varient-2{
@@ -127,6 +127,9 @@ body{
 label{
   color: black;
 }
+.btn-default{
+  margin-left: 130px;
+}
 /* button{
   color: whitesmoke;
 }
@@ -170,6 +173,7 @@ table {
 }
 .edit{
   margin-left: 20px;
+  font-size: small;
 }
 .table-row{
   margin-left: 50px;

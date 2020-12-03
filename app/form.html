@@ -3,49 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/icofont/demo.html">
     <link rel="stylesheet" href="./raja.css">
+    <link rel="stylesheet" href="../vendor/icofont/icofont.min.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../app/main.js">
+  
 </head>
-<body> 
-    <div class="wrapper">
-    <h1 class="ui">contact details</h1> 
-            <form class="contact">
-              <div> 
-               <label for="name">name:   </label><br>
-                <input type="rext" name="name">
-                  </div>
-           <div> 
-        <label for="email id">Email id:</label><br>
-        <input type="text" Email id="email id">
-   </div>
-    <div>
-      <label for="password">possword:</label><br>
-      <input type="text" password="password">
- </div>
- <div>
-   <label for="confirm password">confirm password:</label><br>
-   <input type="text" confirm password="confirm password">
- </div>
-<div>
-  <label for="gender">genter:</label><br>
-  <input type="radio" id="male" name="gender">
-  <label for="male">male</label>
-  <input type="radio" name="gender" id="female">
-  <label for="female">female</label>
-  <div>
-    <label for="language">language :</label><br>
-    <input type="checkbox" id="tamil" name="language">
-    <label for="tamil" >tamil</label>
-    <input type="checkbox" id="english" name="language">
-    <label for="english" >tamil</label><br>
-     <textarea rows="4" cols="50" name="comment" form="usrform">
-    Enter text here...</textarea>
+<body>
+  
+  <div class="container-fluid bg-dark head ">
+    <div class="row"> 
+  <div class="col ten"> 
+    <i class="icofont-navigation-menu menu"></i>
 </div>
-  <div class="qwe">
-    <button type="button" onclick="alert('sucessfully!')">register</button>
-  </div>
- </form>
-</div>
-
+  <div class="col-auto two">
+   <i class="fa fa-user-circle-o persion hey" aria-hidden="true"></i>
+  </div>  
+</div>  
+  </div>  
+         <div class="d-flex" id="wrapper">
+           
+         <!-- Sidebar -->
+                <div class="border-right board bg-dark" id="sidebar-wrapper">
+           <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action bg-dark">Dashboard</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark"><i class="icofont-layout icon"></i>layouts</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark "> <i class="icofont-chart-bar-graph icon"></i>charts</a>
+            <a href="#" class="list-group-item list-group-item-action bg-dark"><i class="icofont-table icon"></i>tables</a>
+            <a href="form.html" class="list-group-item list-group-item-action bg-dark"><i class="fa fa-file-text-o icon" aria-hidden="true"></i>forms</a>
+          </div>
+        </div>` 
+              
+         <form class="contact">
+          <div>
+            <h1 class="ui">contact details</h1> <br>
+                    </div> 
+                  <div> 
+                   <label for="name"> patient name <span class="can">:</span>   </label>
+                    <input type="text" name="name">
+                      </div>
+               <div> 
+            <label for="email id">patient pincode <span class="can1">:</span></label>
+            <input type="text" Email id="email id">
+       </div>
+        <div>
+          <label for="password">phone no<span class="can2">:</span ></label>
+          <input type="text" password="password">
+      </div>
+      <div>
+       <label for="confirm password">address<span class="can3">:</span></label>
+       <input type="text" confirm password="confirm password">
+      </div>
+      <div>
+      
+      <div class="qwe">
+               <button type="button" onclick="alert('sucessfully!')">save</button>
+        <button class="qwee" type="button">cancel</button>
+      </div>
+      </form>
+      </div>
+                  <script src="../node_modules/jquery/dist/jquery.js"></script>
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/echarts/dist/echarts.js"></script>
+<script type="text/javascript">
+      
+  </script>
 </body>
 </html>
