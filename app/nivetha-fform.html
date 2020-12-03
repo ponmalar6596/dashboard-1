@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/nive-css.css" />
+  
+    <link rel="stylesheet" href="../vendor/icofont/icofont.min.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="border-right sidebar-back" id="sidebar-wrapper">
+        <div class="sidebar-heading  text-white mt-4"></div>
+        <div class="list-group list-group-flush">
+          <a href="nive-home.html" class="list-group-item list-group-item-action side text-white hover"
+            >
+            <i class="icofont-home icofont-2px side-icon"></i>home</a
+          >
+          
+          
+          <a href="nivetha-ptable.html" class="list-group-item list-group-item-action side text-white hover"
+            ><i class="icofont-pie-chart"></i>chart</a
+          >
+          <a href="nivetha-ftable.html" class="list-group-item list-group-item-action side text-white hover"
+            ><i class="icofont-table"></i>table</a
+          >
+          <a href="nivetha-utable.html" class="list-group-item list-group-item-action side text-white hover"
+            ><i class="icofont-edit"></i>form</a
+          >
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <!-- <div>
+      <div id="page-content-wrapper">
+      </div> -->
+<!-- nav bar fixed -->
+        <div class="fixed-top">
+         
+          <nav class="navbar navbar-dark nav-color">
+            <!-- <div class="row"> -->
+            <div class="text-white">corona tracker</div>
+            <div class="col-6">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-wrapper" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+            <!-- </div> -->
+          </nav>
+         </div>
+        
+
+<!-- page content -->
+        <div class="container-fluid">
+          <div class="page-title">
+            <h1>Dashboard</h1>
+          </div>
+          <form>
+            <div class="form-row">
+              <!-- <h2>new records</h2> -->
+              <div class="form-group bg-light col-md-6">
+                <label for="p-id">patient id</label>
+                <input type="text" class="form-control" id="p-id" />
+              </div>
+              <div class="form-group bg-light col-md-6">
+                <label for="exe-id">executive id</label>
+                <input type="text" class="form-control" id="exe-id" />
+              </div>
+            </div>
+            <div class="row">
+            <div class="form-group bg-light  col-md-4">
+              <label for="follow-up">follow-up date & time</label>
+              <input type="date" class="form-control" id="follow-up" />
+            </div></div>
+           
+    
+            <!-- treatment -->
+            <div class="row">
+              <div class="col-3  bg-light">
+                
+                  <p>maintain distance</p></div>
+                  <div class="form-check col-2">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="maintain-distance"
+                      id="exampleRadios1"
+                      value="yes"
+                    />
+                    <label class="form-check-label" for="exampleRadios1">
+                      yes
+                    </label>
+                  </div>
+    
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="maintain-distance"
+                      id="exampleRadios2"
+                      value="no"
+                    />
+                    <label class="form-check-label" for="exampleRadios1">
+                      no
+                    </label>
+                  </div>
+                  
+                </div>
+              
+<!-- 2 -->
+              <div class="row">
+                <div class="col-3 bg-light">
+                  
+                    <p>Take Medicine</p></div>
+                    <div class="form-check col-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Take Medicine"
+                        id="exampleRadios3"
+                        value="yes"
+                      />
+                      <label class="form-check-label" for="exampleRadios3">
+                        yes
+                      </label>
+                    </div>
+      
+                    <div class="form-check col-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Take Medicine"
+                        id="exampleRadios4"
+                        value="no"
+                      />
+                      <label class="form-check-label" for="exampleRadio4">
+                        no
+                      </label>
+                    </div>                    
+                  </div>                         
+
+
+              <!-- third -->
+              <div class="row">
+                <div class="col-3 bg-light">
+                  
+                    <p>Have Fever</p></div>
+                    <div class="form-check col-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Fever"
+                        id="exampleRadios1"
+                        value="yes"
+                      />
+                      <label class="form-check-label" for="exampleRadios1">
+                        yes
+                      </label>
+                    </div>
+      
+                    <div class="form-check col-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Fever"
+                        id="exampleRadios2"
+                        value="no"
+                      />
+                      <label class="form-check-label" for="exampleRadios2">
+                        no
+                      </label>
+                    </div>              
+                </div>                  
+
+              <!-- 4 -->
+              <div class="row">
+                <div class="col-3  bg-light">
+                  
+                    <p>Have Cold</p></div>
+                    <div class="form-check col-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Cold"
+                        id="exampleRadios1"
+                        value="yes"
+                      />
+                      <label class="form-check-label col-3" for="exampleRadios1">
+                        yes
+                      </label>
+                    </div>
+      
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Cold"
+                        id="exampleRadios2"
+                        value="no"
+                      />
+                      <label class="form-check-label" for="exampleRadios2">
+                        no
+                      </label>
+                    </div>
+                    
+                  </div>
+                                       
+<!-- 5 -->
+<div class="row">
+  <div class="col-3  bg-light">
+    
+      <p>Have Throat Pain</p></div>
+      <div class="form-check col-2">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="Throat-Pain"
+          id="exampleRadios1"
+          value="yes"
+        />
+        <label class="form-check-label" for="exampleRadios1">
+          yes
+        </label>
+      </div>
+
+      <div class="form-check col-4">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="Throat-Pain"
+          id="exampleRadios2"
+          value="no"
+        />
+        <label class="form-check-label" for="exampleRadios2">
+          no
+        </label>
+      </div>
+      
+    </div>
+   
+  <div>
+    <label for="notes">notes</label>
+    <textarea id="notes" name="notes" placeholder="enter some notes" rows="4" cols="50"></textarea>
+  </div>
+
+<style type="text/css">
+textarea{vertical-align:top;}
+</style>
+
+
+
+
+
+
+
+              <!-- infect -->
+              
+              
+            </div>
+            <!-- treatment -->
+          </form>
+        
+         </div>
+      <!-- page content ends -->
+        </div>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/echarts/dist/echarts.js"></script>
+
+    <script src="js/nive.js" type="text/javascript"></script>
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
