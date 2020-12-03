@@ -26,18 +26,18 @@
         <div class="list-group list-group-flush">
           <a href="nive-home.html" class="list-group-item list-group-item-action side text-white hover"
             >
-            <i class="icofont-home icofont-2px side-icon"></i>home</a
+            <i class="icofont-doctor icofont-1x side-icon "></i>home</a
           >
           
           
-          <a href="nn-chart.html" class="list-group-item list-group-item-action side text-white hover"
-            ><i class="icofont-pie-chart"></i>chart</a
+          <a href="nivetha-ptable.html" class="list-group-item list-group-item-action side text-white hover"
+            ><i class="icofont-patient-file icofont-1x side-icon "></i>patient</a
           >
-          <a href="nn-table.html" class="list-group-item list-group-item-action side text-white hover"
-            ><i class="icofont-table"></i>table</a
+          <a href="nivetha-ftable.html" class="list-group-item list-group-item-action side text-white hover"
+            ><i class="icofont-stethoscope-alt icofont-1x side-icon"></i>follow-up</a
           >
-          <a href="nivetha-pform.html" class="list-group-item list-group-item-action side text-white hover"
-            ><i class="icofont-edit"></i>form</a
+          <a href="nivetha-utable.html" class="list-group-item list-group-item-action side text-white hover"
+            ><i class="icofont-ui-user icofont-1x side-icon"></i>form</a
           >
         </div>
       </div>
@@ -53,7 +53,7 @@
           <nav class="navbar navbar-dark nav-color">
             <!-- <div class="row"> -->
             <div class="text-white">corona tracker</div>
-            <div class="col-6">
+            <div class="col-10">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-wrapper" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,119 +64,97 @@
         
 
 <!-- page content -->
-        <div class="container-fluid">
-          <div class="page-title">
-            <h1>Dashboard</h1>
+        <div class="container card-margin ">
+          <div class="card">
+          <div class="card-header">
+            <h1>Patient form</h1>
           </div>
-          <form>
+          <form class="card-body">
+
             <div class="form-row">
               <!-- <h2>new records</h2> -->
-              <div class="form-group bg-light shadow-bottom shadow-lg col-md-6">
+              <div class="form-group col-md-6">
                 <label for="pname">patient name</label>
                 <input type="text" class="form-control" id="pname" />
               </div>
-              <div class="form-group bg-light shadow-bottom shadow-lg col-md-6">
+              <div class="form-group  col-md-6">
                 <label for="pmobile">patient mobile</label>
-                <input type="text" class="form-control" id="pmobile" />
+                <input type="number" class="form-control" id="pmobile" />
               </div>
             </div>
                 
             <div class="form-row">
-              <div class="form-group bg-light shadow-lg shadow-bottom col-md-6">
+              <div class="form-group  col-md-6">
                 <label for="inputStreet">street</label>
                 <input type="text" class="form-control" id="inputStreet" />
               </div>
-              <div class="form-group bg-light shadow-bottom shadow-lg col-md-4">
+              <div class="form-group col-md-4">
                   <label for="inputArea">Area</label>
                   <input type="text" class="form-control" id="inputArea" />
               </div>
-              <div class="form-group bg-light shadow-lg shadow-bottom col-md-2">
+              <div class="form-group col-md-2">
                 <label for="inputZip">Zip</label>
                 <input type="text" class="form-control" id="inputZip" />
               </div>
             </div>
             <div class="form-row">
-            <div class="form-group shadow bg-light col-md-6">
+            <div class="form-group col-md-6">
                 <label for="tested-on">tested-on</label>
-                <input type="text" class="form-control" id="tested-on" />
+                <input type="date" class="form-control" id="tested-on" />
             </div>
-            <div class="form-group shadow bg-light col-md-4">
-              <label for="pname">patient name</label>
-              <input type="text" class="form-control" id="pname" />
+            <div class="form-group  col-md-4">
+              <label for="result">result date</label>
+              <input type="date" class="form-control" id="result" />
           </div>
 
           </div>
     
             <!-- treatment -->
             <div class="form-row">
-              <div class="col-6 shadow bg-light">
-                <div>
-                  <p>outcome of treatment</p>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="exampleRadios"
-                      id="exampleRadios1"
-                      value="option1"
-                    />
-                    <label class="form-check-label" for="exampleRadios1">
-                      recovered
-                    </label>
-                  </div>
-    
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="exampleRadios"
-                      id="exampleRadios2"
-                      value="option2"
-                    />
-                    <label class="form-check-label" for="exampleRadios2">
-                      on-treatment
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="exampleRadios"
-                      id="exampleRadios3"
-                      value="option3"
-                    />
-                    <label class="form-check-label" for="exampleRadios3">
-                      death
-                    </label>
-                  </div>
-                </div>
+              <div class="form-group col-md-6">
+                  <label for="tested-on">Quarantine-on</label>
+                  <input type="date" class="form-control" id="tested-on" />
               </div>
-              <!-- infect -->
-              <div class="col-6 bg-light shadow">
-                <div class="row">
-                  <div class="col-3">
-                    <div>mode of spread</div>
-                  </div>
-                  <div class="col-3">
-                    <div class="form-group width">
-                      <!-- <label for="exampleFormControlSelect1">Example select</label> -->
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option value="spread" selected disabled>
-                          select mode of spread
-                        </option>
-                        <option value="contact">direct contact</option>
-                        <option value="migration">migration</option>
-                        <option value="transport">transport</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="form-group  col-md-4">
+                <label for="result">cured date</label>
+                <input type="date" class="form-control" id="result" />
+            </div>  
             </div>
             <!-- treatment -->
+
+            <div class="row">
+              <div class="col-md-4">
+                
+                  <p>Have undergone hospitalization?</p></div>
+                  <div class="form-check col-2">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="hospital"
+                      id="exampleRadios1"
+                      value="yes"
+                    />
+                    <label class="form-check-label" for="exampleRadios1">
+                      yes
+                    </label>
+                  </div>
+            
+                  <div class="form-check col-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="hospital"
+                      id="exampleRadios2"
+                      value="no"
+                    />
+                    <label class="form-check-label" for="exampleRadios2">
+                      no
+                    </label>
+                  </div>                  
+                </div>
           </form>
         
-         </div>
+         </div></div>
       <!-- page content ends -->
         </div>
         <!-- Optional JavaScript; choose one of the two! -->

@@ -1,5 +1,5 @@
 body {
-  background-color: #f8f9fc;
+  background-color: rgb(233, 227, 227);
   /* background-image: linear-gradient(to bottom right,rgb(26, 185, 248),rgb(6, 230, 6)); */
 }
 
@@ -11,8 +11,7 @@ body {
 }
 
 #wrapper {
-  overflow-x: hidden;
-   /* background-image: linear-gradient(to bottom right,#ec2173,#6666ff); */
+  overflow-x: hidden;   
 } 
 .side{
   background-color:transparent;
@@ -94,6 +93,9 @@ body {
 nav {
   background-color: white;
 }
+.list-group-item{
+  padding-left: 40px;
+}
 /* .list-group-item .list-group-item-action{
   background-image: linear-gradient(to bottom right,#ec2173,#6666ff);
 } 
@@ -134,4 +136,10 @@ nav {
   margin-right: 10%;
   max-height: 100%;
   margin-left: 10%;
+}
+.card-margin{
+  margin-top:70px;
+}
+.side-icon{
+  padding-right: 20px;
 }

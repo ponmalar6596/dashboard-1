@@ -22,22 +22,22 @@
     <div class="d-flex" id="wrapper">
       <!-- Sidebar -->
       <div class="border-right sidebar-back" id="sidebar-wrapper">
-        <div class="sidebar-heading  text-white mt-4"></div>
+        <div class="sidebar-heading  text-white mt-5"></div>
         <div class="list-group list-group-flush">
           <a href="nive-home.html" class="list-group-item list-group-item-action side text-white hover"
             >
-            <i class="icofont-home icofont-2px side-icon"></i>home</a
+            <i class="icofont-doctor icofont-1x  side-icon "></i>home</a
           >
           
           
           <a href="nivetha-ptable.html" class="list-group-item list-group-item-action side text-white hover"
-            ><i class="icofont-pie-chart"></i>chart</a
+            ><i class="icofont-patient-file icofont-1x side-icon "></i>patient</a
           >
           <a href="nivetha-ftable.html" class="list-group-item list-group-item-action side text-white hover"
-            ><i class="icofont-table"></i>table</a
+            ><i class="icofont-stethoscope-alt icofont-1x side-icon"></i>follow-ups</a
           >
           <a href="nivetha-utable.html" class="list-group-item list-group-item-action side text-white hover"
-            ><i class="icofont-edit"></i>form</a
+            ><i class="icofont-ui-user icofont-1x side-icon"></i>user</a
           >
         </div>
       </div>
@@ -53,7 +53,7 @@
           <nav class="navbar navbar-dark nav-color">
             <!-- <div class="row"> -->
             <div class="text-white">corona tracker</div>
-            <div class="col-6">
+            <div class="col-10">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-wrapper" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,24 +64,25 @@
         
 
 <!-- page content -->
-        <div class="container-fluid">
-          <div class="page-title">
+        <div class="container-fluid mt-5 ml-5 mr-5 mb-2">
+          <div class="card mt-5 mb-5">
+          <div class="page-title card-header bg-primary text-white">
             <h1>Dashboard</h1>
           </div>
-          <form>
+          <form class="card-body">
             <div class="form-row">
               <!-- <h2>new records</h2> -->
-              <div class="form-group bg-light col-md-6">
+              <div class="form-group col-md-6">
                 <label for="p-id">patient id</label>
                 <input type="text" class="form-control" id="p-id" />
               </div>
-              <div class="form-group bg-light col-md-6">
+              <div class="form-group  col-md-6">
                 <label for="exe-id">executive id</label>
                 <input type="text" class="form-control" id="exe-id" />
               </div>
             </div>
             <div class="row">
-            <div class="form-group bg-light  col-md-4">
+            <div class="form-group col-md-4">
               <label for="follow-up">follow-up date & time</label>
               <input type="date" class="form-control" id="follow-up" />
             </div></div>
@@ -89,7 +90,7 @@
     
             <!-- treatment -->
             <div class="row">
-              <div class="col-3  bg-light">
+              <div class="col-3">
                 
                   <p>maintain distance</p></div>
                   <div class="form-check col-2">
@@ -122,7 +123,7 @@
               
 <!-- 2 -->
               <div class="row">
-                <div class="col-3 bg-light">
+                <div class="col-3">
                   
                     <p>Take Medicine</p></div>
                     <div class="form-check col-2">
@@ -150,12 +151,11 @@
                         no
                       </label>
                     </div>                    
-                  </div>                         
-
+                  </div>                       
 
               <!-- third -->
               <div class="row">
-                <div class="col-3 bg-light">
+                <div class="col-3">
                   
                     <p>Have Fever</p></div>
                     <div class="form-check col-2">
@@ -187,7 +187,7 @@
 
               <!-- 4 -->
               <div class="row">
-                <div class="col-3  bg-light">
+                <div class="col-3">
                   
                     <p>Have Cold</p></div>
                     <div class="form-check col-2">
@@ -220,7 +220,7 @@
                                        
 <!-- 5 -->
 <div class="row">
-  <div class="col-3  bg-light">
+  <div class="col-3">
     
       <p>Have Throat Pain</p></div>
       <div class="form-check col-2">
@@ -261,18 +261,13 @@ textarea{vertical-align:top;}
 </style>
 
 
-
-
-
-
-
               <!-- infect -->
               
               
             </div>
             <!-- treatment -->
           </form>
-        
+        </div>
          </div>
       <!-- page content ends -->
         </div>
