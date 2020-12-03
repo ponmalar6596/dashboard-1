@@ -3,10 +3,30 @@ body {
   /* background-image: linear-gradient(to bottom right,rgb(26, 185, 248),rgb(6, 230, 6)); */
 }
 
+/* .d-flex{
+  background-image: linear-gradient(from bottom right,#ec2173,#6666ff);
+} */
+.sidebar-back {
+  background-image: linear-gradient(rgb(8, 2, 31),rgb(23, 129, 172));
+}
 
 #wrapper {
   overflow-x: hidden;
-  /* background-image: linear-gradient(to bottom right,rgb(26, 185, 248),rgb(6, 230, 6));; */
+   /* background-image: linear-gradient(to bottom right,#ec2173,#6666ff); */
+} 
+.side{
+  background-color:transparent;
+  
+}
+
+.hover:hover{
+  background-color:rgb(23, 129, 172);
+  color: white;
+}
+
+.nav-color{
+  background-image: linear-gradient(90deg,rgb(8, 2, 29),rgb(23, 129, 172));
+ 
 }
 
 #sidebar-wrapper {
@@ -52,12 +72,11 @@ body {
 
 .card-statistics {
   border: none;
-  /* border-left: solid 4px; */
+
   border-radius: 6px;
 }
 
-.card-statistics .card-body {
-}
+
 .card-statistics .card-body .card-title {
   text-transform: uppercase;
   font-size: 0.75em;
@@ -67,9 +86,7 @@ body {
 .card .card-text {
   color: white;
 }
-/* .card .card-footer{
-      color: white;
-  }  */
+
 .card-statistics .card-body .card-text {
   font-size: 1.5em;
   font-weight: 600;
@@ -77,9 +94,16 @@ body {
 nav {
   background-color: white;
 }
-.list-group-item .list-group-item-action .k {
-  background-color: white;
+/* .list-group-item .list-group-item-action{
+  background-image: linear-gradient(to bottom right,#ec2173,#6666ff);
+} 
+.list-group .list-group-flush {
+  background-image: linear-gradient(to bottom right,#ec2173,#6666ff);
 }
+.sidebar-heading{
+  background-image: linear-gradient(to bottom right,#ec2173,#6666ff);
+} */
+
 
 .table .table-hover .table-light:active {
   color: tomato;
@@ -95,7 +119,7 @@ nav {
   cursor: pointer;
 }
 
-.card:hover {
+.card-hover:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
@@ -107,5 +131,7 @@ nav {
 }
 
 .container {
-  margin: auto;
+  margin-right: 10%;
+  max-height: 100%;
+  margin-left: 10%;
 }
