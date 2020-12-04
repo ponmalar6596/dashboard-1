@@ -21,34 +21,27 @@
   <body>
     <div class="d-flex" id="wrapper">
       <!-- Sidebar -->
-      <div class="border-right bg-dark" id="sidebar-wrapper">
-        <div class="sidebar-heading bg-dark text-white"><i class="icofont-patient-file"></i></div>
+      <div class="border-right sidebar-back" id="sidebar-wrapper">
+        <div class="sidebar-heading text-white mt-5" ></div>
         <div class="list-group list-group-flush">
-          <a href="nive-home.html" class="list-group-item list-group-item-action bg-dark text-white"
-            >
-            <i class="icofont-home icofont-2px side-icon"></i>home</a
+          <a href="nive-home.html" class="list-group-item list-group-item-action text-white side hover">
+            <i class="icofont-doctor icofont-1x side-icon "></i>Dashboard</a>
+         
+          <a href="nivetha-ptable.html" class="list-group-item list-group-item-action text-white side hover"
+            ><i class="icofont-patient-file icofont-1x side-icon"></i>patients</a
           >
-          <a href="" class="list-group-item list-group-item-action bg-dark text-white"
-            ><i class="icofont-copy icofont-2px side-icon"></i>layouts</a
+          <a href="nivetha-ftable.html" class="list-group-item list-group-item-action text-white side hover"
+            ><i class="icofont-stethoscope-alt icofont-1x side-icon"></i>follow-ups</a
           >
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white"
-            ><i class="icofont-book icofont-2px side-icon"></i>Overview</a
-          >
-          
-          <a href="nn-chart.html" class="list-group-item list-group-item-action bg-dark text-white"
-            ><i class="icofont-pie-chart"></i>chart</a
-          >
-          <a href="nn-table.html" class="list-group-item list-group-item-action bg-dark text-white"
-            ><i class="icofont-table"></i>table</a
-          >
-          <a href="nn-form.html" class="list-group-item list-group-item-action bg-dark text-white"
-            ><i class="icofont-edit"></i>form</a
+          <a href="nivetha-utable.html" class="list-group-item list-group-item-action text-white side hover"
+            ><i class="icofont-ui-user icofont-1x side-icon"></i>user</a
           >
         </div>
       </div>
       <!-- /#sidebar-wrapper -->
 
       <!-- Page Content -->
+
       <div>
       <div id="page-content-wrapper">
         <nav
@@ -108,10 +101,10 @@
 
         <div class="fixed-top">
          
-          <nav class="navbar navbar-dark bg-dark">
+          <nav class="navbar navbar-dark nav-color">
             <!-- <div class="row"> -->
             <div class="text-white">corona tracker</div>
-            <div class="col-6">
+            <div class="col-10">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-wrapper" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -157,7 +150,7 @@
                   </div>
                 </div>
                 <div class="col-3">
-                  <div class="card bg-warning">
+                  <div class="card bg-warning card-hover">
                     <div class="card-body">
                       <!-- <h5 class="card-title">Special title treatment</h5> -->
                       <p class="card-text">hospitalized cases</p>
@@ -182,7 +175,7 @@
                   </div>
                 </div>
                 <div class="col-3">
-                  <div class="card bg-success">
+                  <div class="card bg-success card-hover">
                     <div class="card-body">
                       <!-- <h5 class="card-title">Special title treatment</h5> -->
                       <p class="card-text">recoverd cases</p>
@@ -207,7 +200,7 @@
                   </div>
                 </div>
                 <div class="col-3">
-                  <div class="card bg-danger">
+                  <div class="card bg-danger card-hover">
                     <div class="card-body">
                       <!-- <h5 class="card-title">Special title treatment</h5> -->
                       <p class="card-text">motality</p>

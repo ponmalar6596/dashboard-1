@@ -21,23 +21,23 @@
   <body>
     <div class="d-flex" id="wrapper">
       <!-- Sidebar -->
-      <div class="border-right bg-dark" id="sidebar-wrapper">
-        <div class="sidebar-heading bg-dark text-white"><i class="icofont-patient-file"></i></div>
+      <div class="border-right sidebar-back" id="sidebar-wrapper">
+        <div class="sidebar-heading text-white"><i class="icofont-patient-file"></i></div>
         <div class="list-group list-group-flush">
-          <a href="nive-home.html" class="list-group-item list-group-item-action bg-dark text-white"
+          <a href="nive-home.html" class="list-group-item list-group-item-action  text-white side hover"
             >
-            <i class="icofont-home icofont-2px side-icon"></i>home</a
+            <i class="icofont-doctor icofont-1x side-icon "></i>dashboard</a
           >
           
           
-          <a href="nn-chart.html" class="list-group-item list-group-item-action bg-dark text-white"
-            ><i class="icofont-pie-chart"></i>chart</a
+          <a href="nivetha-ptable.html" class="list-group-item list-group-item-action text-white side hover"
+            ><i class="icofont-patient-file icofont-1x side-icon "></i>patients</a
           >
-          <a href="nn-table.html" class="list-group-item list-group-item-action bg-dark text-white"
-            ><i class="icofont-table"></i>table</a
+          <a href="nivetha-ftable.html" class="list-group-item list-group-item-action  text-white side hover"
+            ><i class="icofont-stethoscope-alt icofont-1x side-icon"></i>follow-ups</a
           >
-          <a href="nn-form.html" class="list-group-item list-group-item-action bg-dark text-white"
-            ><i class="icofont-edit"></i>form</a
+          <a href="nivetha-utable.html" class="list-group-item list-group-item-action text-white side hover"
+            ><i class="icofont-ui-user icofont-1x side-icon"></i>user</a
           >
         </div>
       </div>
@@ -50,10 +50,10 @@
 <!-- nav bar fixed -->
         <div class="fixed-top">
          
-          <nav class="navbar navbar-dark bg-dark">
+          <nav class="navbar navbar-dark nav-color">
             <!-- <div class="row"> -->
             <div class="text-white">corona tracker</div>
-            <div class="col-6">
+            <div class="col-10">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-wrapper" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -66,7 +66,12 @@
 <!-- page content -->
         <div class="container-fluid">
           <div class="page-title">
-            <h1>Dashboard</h1>
+            <div class="mt-5">
+            <h1>COVID19-UPDATES</h1></div>
+            <div class="row">
+           
+            <a href="nivetha-uform.html " class="col-md-3 offset-md-8 btn btn-primary btn-lg active" role="button" aria-pressed="true">create</a>
+          </div>
           </div>
           <div class="table shadow" id="table">
             <h2>PATIENTS RECORD</h2>
@@ -75,77 +80,79 @@
             >
               <thead>
                 <tr>
-                  <th scope="col">serial no</th>
                   <th scope="col">patient name</th>
-                  <th scope="col">age</th>
-                  <th scope="col">country</th>
-                  <th scope="col">result</th>
+                  <th scope="col">mail id</th>
+                  <th scope="col">mobile number</th>
+                  <th scope="col">user type</th>
+                            
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">1</th>
-                  <td>mee chan</td>
-                  <td>21</td>
-                  <td>korea</td>
-                  <td>recovered</td>
+                  <td scope="row">raj</th>
+                  <td>nivethabe1997@gmail.com</td>
+                  <td>9276375899</td>
+                  <td></td>
+                  
                 </tr>
+
                 <tr>
-                  <th scope="row">2</th>
-                  <td>Mark</td>
-                  <td>69</td>
-                  <td>usa</td>
-                  <td>unrecovered</td>
+                  <td scope="row">malar</th>
+                  <td>nivethabe1997@gmail.com</td>
+                  <td>8776338309</td>
+                  <td>yes</td>
+                  
                 </tr>
+
                 <tr>
-                  <th scope="row">3</th>
-                  <td>prem</td>
-                  <td>52</td>
-                  <td>india</td>
-                  <td>unrecovered</td>
+                  <td scope="row">kavi</th>
+                  <td>nivethabe1997@gmail.com</td>
+                  <td>2689997654</td>
+                  <td>yes</td>
+            
                 </tr>
+
                 <tr>
-                  <th scope="row">4</th>
-                  <td>kumar</td>
-                  <td>28</td>
-                  <td>india</td>
-                  <td>on-treatment</td>
+                  <td scope="row">keerthi</th>
+                  <td>nivethabe1997@gmail.com</td>
+                  <td>8776762389</td>
+                  <td>yes</td>
+                
                 </tr>
+
                 <tr>
-                  <th scope="row">5</th>
-                  <td>harry</td>
-                  <td>32</td>
-                  <td>usa</td>
-                  <td>recovered</td>
+                  <td scope="row">peter</th>
+                  <td>nivethabe1997@gmail.com</td>
+                  <td>48989479090</td>
+                  <td>yes</td>
+                 
                 </tr>
+
                 <tr>
-                  <th scope="row">6</th>
-                  <td>chan lee</td>
-                  <td>67</td>
-                  <td>china</td>
-                  <td>recovered</td>
+                  <td scope="row">john</th>
+                  <td>nivethabe1997@gmail.com</td>
+                  <td>367638899</td>
+                  <td>yes</td>
+                 
+
                 </tr>
+
                 <tr>
-                  <th scope="row">7</th>
-                  <td>william</td>
-                  <td>65</td>
-                  <td>usa</td>
-                  <td>on-treatment</td>
+                  <td scope="row">priya</th>
+                  <td>nivethabe1997@gmail.com</td>
+                  <td>9776755562</td>
+                  <td>yes</td>
+                 
                 </tr>
+
                 <tr>
-                  <th scope="row">8</th>
-                  <td>wyong lee</td>
-                  <td>74</td>
-                  <td>china</td>
-                  <td>unrecovered</td>
-                </tr>
-                <tr>
-                  <th scope="row">9</th>
-                  <td>henna</td>
-                  <td>59</td>
-                  <td>usa</td>
-                  <td>recovered</td>
-                </tr>
+                  <td scope="row">vetri</th>
+                  <td>nivethabe1997@gmail.com</td>
+                  <td>9923468989</td>
+                  <td>yes</td>
+                 
+                </tr>                             
+                
               </tbody>
             </table>
           </div>
