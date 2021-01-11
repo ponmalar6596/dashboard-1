@@ -189,3 +189,17 @@ table {
     margin-left: 50px;
     margin-top: 20px;
 }
+.login{
+    text-align: center;
+}
+.heading{
+    margin-top: 10%;
+    
+}
+/* .user-pic{
+    background: linear-gradient(#060647, rgb(18, 122, 163));
+}
+.colorfree{
+    background: linear-gradient(#060647, rgb(18, 122, 163));
+
+} */

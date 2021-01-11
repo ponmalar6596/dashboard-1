@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link  rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" /> <script src="../node_modules/jquery/dist/jquery.js"></script>
   
     <link rel="stylesheet" href="../vendor/icofont/icofont.min.css" />
   <!-- <link rel="stylesheet" href="./main.js">   -->
        <title>Document</title>
+       <script >
+         
+
+         $(document).ready(function(){
+          var url_string = window.location.href;
+var url = new URL(url_string);
+var patientId = url.searchParams.get("patient_id");
+console.log("patientId",patientId);
+getPatientById(patientId);
+  });
+
+      
+       </script>
   </head>
   <body>
     
@@ -122,9 +135,19 @@
                     <label for="feInputAddress">AreaName</label>
                     <input type="text" class="form-control" id="areaName" placeholder="565 Main St">
                   </div>
-                  <div class="form-group col-md-6">
+                  <div class="form-group col-md-4">
                     <label for="fePassword">TestedOn</label>
                     <input type="date" class="form-control" id="tesedOn" placeholder="Date">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="feInputState">Patient Status</label>
+                    <select id="status" class="form-control">
+                      <option selected disabled>Choose...</option>
+                      <option  value="Confirmed Cases">Confirmed Cases</option>
+                      <option  value="Infectious Cases">Infectious Cases</option>
+                      <option  value="Recover Cases"> Recover Cases</option>
+                      <option  value="Hospital Cases">Hospital Cases</option>
+                    </select>
                   </div>
                   </div>
                   <!-- <div class="form-row">

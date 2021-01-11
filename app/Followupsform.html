@@ -97,49 +97,77 @@
             <div class="row">
               <div class="col">
                 <form>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="feFirstName">First Name</label>
-                      <input type="text" class="form-control" id="feFirstName" placeholder="First Name" value="Pon">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="feLastName">Last Name</label>
-                      <input type="text" class="form-control" id="feLastName" placeholder="Last Name" value="Malar">
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="feEmailAddress">Contact</label>
-                      <input type="tel" class="form-control" id="feEmailAddress" placeholder="ph-number" value="+91-8936245241">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="feInputAddress">PatientId</label>
-                      <input type="number" class="form-control" id="feInputAddress" placeholder="34">
-                    </div>
-                  </div>
-                  <div class="form-row">
+                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="feInputAddress">ExecutiveId</label>
-                    <input type="text" class="form-control" id="feInputAddress" placeholder="56">
+                    <label for="feInputAddress">Folloup Name</label>
+                    <input type="text" class="form-control" id="folloupname" placeholder="56">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="fePassword">Followups Date&Time</label>
-                    <input type="date" class="form-control" id="fePassword" placeholder="Date">
+                    <label for="fePassword">Patinent Name</label>
+                    <select id="maintainDistance" class="form-control">
+                       <option selected disabled>Choose...</option> 
+                      
+                    </select>
                   </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <label for="feInputCity">Maintain Distance</label>
-                      <input type="text" class="form-control" id="feInputCity">
+                      <label for="feInputCity">Folloup Date</label>
+                      <input type="date" class="form-control" id="followupsDate">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputZip">Notes</label>
-                        <input type="text" class="form-control" id="inputZip">
+                      <label for="inputZip">Maintain Distance</label>
+                      <select id="maintainDistance" class="form-control">
+                      <option selected disabled>Choose...</option>
+                      <option  value="Yes">Yes</option>
+                      <option  value="No">No</option>
+                      
+                    </select>
+                       
                       </div>
                     
                   </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="feInputCity">Take Medicine</label>
+                      <select id="takeMedicine" class="form-control">
+                        <option selected disabled>Choose...</option>
+                        <option  value="Yes">Yes</option>
+                        <option  value="No">No</option>
+                        
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputZip">Have Fever</label>
+                        <select id="haveFever" class="form-control">
+                          <option selected disabled>Choose...</option>
+                          <option  value="Yes">Yes</option>
+                          <option  value="No">No</option>
+                          
+                        </select>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="feInputCity">Have Cold</label>
+                        <select id="haveCold" class="form-control">
+                          <option selected disabled>Choose...</option>
+                          <option  value="Yes">Yes</option>
+                          <option  value="No">No</option>
+                          
+                        </select>
+                      </div>
+                      <!-- <div class="form-group col-md-3">
+                          <label for="inputZip">Have Throughtpain</label>
+                          <select id="haveThroughtpain" class="form-control">
+                            <option selected disabled>Choose...</option>
+                            <option  value="Yes">Yes</option>
+                            <option  value="No">No</option>
+                            
+                          </select>
+                        </div> -->
+                    
+                  </div>
                   <div class=bttn>
-                  <button type="button" class="btn btn-success">Save</button>
+                  <button type="button" id="folloupsubmit"class="btn btn-success">Save</button>
                   <button type="button" class="btn btn-danger">Cancel</button>
                   </div>
                 </form>
@@ -157,5 +185,7 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/echarts/dist/echarts.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/followups.js"></script>
+
   </body>
 </html>
